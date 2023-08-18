@@ -1,0 +1,88 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 4c45195f-5dd6-4774-a2fe-fe3f54eb8cac)
+
+  (paper "A4")
+
+  (title_block
+    (title "CAN 3D Printer (4 Motor) - Motor Drivers")
+    (rev "1")
+    (company "Abit Gray")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 53.34 129.54) (size 66.04 20.32)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 47aa3abf-8d06-4c45-872c-33ec1f9a6564)
+    (property "Sheetname" "Motor 4" (at 86.36 139.7 0)
+      (effects (font (size 5 5) bold))
+    )
+    (property "Sheetfile" "Motor1.kicad_sch" (at 53.34 150.4446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b" (page "9"))
+      )
+    )
+  )
+
+  (sheet (at 53.34 104.14) (size 66.04 20.32)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 596394bf-80ea-4be7-ad96-94dd67657b85)
+    (property "Sheetname" "Motor 3" (at 86.36 114.3 0)
+      (effects (font (size 5 5) bold))
+    )
+    (property "Sheetfile" "Motor1.kicad_sch" (at 53.34 125.0446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b" (page "8"))
+      )
+    )
+  )
+
+  (sheet (at 53.34 53.34) (size 66.04 20.32)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid a3514610-4e2d-47ba-84b8-39806e951746)
+    (property "Sheetname" "Motor 1" (at 86.36 63.5 0)
+      (effects (font (size 5 5) bold))
+    )
+    (property "Sheetfile" "Motor1.kicad_sch" (at 53.34 74.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 53.34 78.74) (size 66.04 20.32)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid c731393f-82c9-42eb-b1cc-cc38a32cf9d8)
+    (property "Sheetname" "Motor 2" (at 86.36 88.9 0)
+      (effects (font (size 5 5) bold))
+    )
+    (property "Sheetfile" "Motor1.kicad_sch" (at 53.34 99.6446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b" (page "7"))
+      )
+    )
+  )
+)
