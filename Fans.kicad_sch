@@ -133,29 +133,29 @@
         )
       )
     )
-    (symbol "Transistor_FET:Si4532DY" (pin_names hide) (in_bom yes) (on_board yes)
+    (symbol "Transistor_FET:QM6006D" (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (at 5.08 1.905 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "Si4532DY" (at 5.08 0 0)
+      (property "Value" "QM6006D" (at 5.08 0 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 5.08 -1.905 0)
+      (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 5.08 -1.905 0)
+        (effects (font (size 1.27 1.27) italic) (justify left) hide)
+      )
+      (property "Datasheet" "http://www.jaolen.com/images/pdf/QM6006D.pdf" (at 0 0 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
-      (property "Datasheet" "https://www.onsemi.com/pub/Collateral/SI4532DY-D.PDF" (at 2.54 0 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "ki_keywords" "Dual N-Channel P-Channel MOSFET" (at 0 0 0)
+      (property "ki_keywords" "N-Channel MOSFET" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "3.9A Id, 30V Vds, Dual N and P Channel MOSFET, 65mOhm Ron, 10V Vgs, SO8L" (at 0 0 0)
+      (property "ki_description" "35A Id, 60V Vds, N-Channel Power MOSFET, 18mOhm Ron, 19.3nC Qg (typ), TO252" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*" (at 0 0 0)
+      (property "ki_fp_filters" "TO?252*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Si4532DY_0_1"
+      (symbol "QM6006D_0_1"
         (polyline
           (pts
             (xy 0.254 0)
@@ -223,20 +223,6 @@
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (circle (center 1.651 0) (radius 2.794)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.54 -1.778) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (circle (center 2.54 1.778) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "Si4532DY_1_1"
         (polyline
           (pts
             (xy 1.016 0)
@@ -267,69 +253,31 @@
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (pin passive line (at 2.54 -5.08 90) (length 2.54)
-          (name "S" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
+        (circle (center 1.651 0) (radius 2.794)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
         )
-        (pin input line (at -5.08 0 0) (length 2.54)
-          (name "G" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 5.08 270) (length 2.54) hide
-          (name "D" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 5.08 270) (length 2.54)
-          (name "D" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "Si4532DY_2_1"
-        (polyline
-          (pts
-            (xy 2.286 0)
-            (xy 1.27 0.381)
-            (xy 1.27 -0.381)
-            (xy 2.286 0)
-          )
+        (circle (center 2.54 -1.778) (radius 0.254)
           (stroke (width 0) (type default))
           (fill (type outline))
         )
-        (polyline
-          (pts
-            (xy 2.794 -0.508)
-            (xy 2.921 -0.381)
-            (xy 3.683 -0.381)
-            (xy 3.81 -0.254)
-          )
+        (circle (center 2.54 1.778) (radius 0.254)
           (stroke (width 0) (type default))
-          (fill (type none))
+          (fill (type outline))
         )
-        (polyline
-          (pts
-            (xy 3.302 -0.381)
-            (xy 2.921 0.254)
-            (xy 3.683 0.254)
-            (xy 3.302 -0.381)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at 2.54 -5.08 90) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
+      )
+      (symbol "QM6006D_1_1"
         (pin input line (at -5.08 0 0) (length 2.54)
           (name "G" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 5.08 270) (length 2.54) hide
-          (name "D" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 2.54 5.08 270) (length 2.54)
           (name "D" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 -5.08 90) (length 2.54)
+          (name "S" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -609,7 +557,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1522281f-787d-4615-aa3f-6ea065c6f555)
   )
-  (text "Current limit:\n- MOSFET: 5.6A - 7A\n- Voltage Selection Header: 3A? (jumper!)\n- JST XH: 3A"
+  (text "Current limit:\n- MOSFET: 4A @ 100°C\n- Voltage Selection Header: 3A? (jumper!)\n- JST XH: 3A"
     (at 115.57 127 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 61fbb74c-8188-4d57-9dc7-faf32f3909ed)
@@ -659,7 +607,7 @@
     (property "Datasheet" "" (at 165.1 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b889bcfd-f395-47e7-9f01-d4a47b0271b7))
+    (pin "1" (uuid c95f10ae-15b4-4c34-bb85-cad32bda5e7a))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -687,15 +635,18 @@
     (property "Datasheet" "~" (at 114.3 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 114.3 59.69 0)
+    (property "LCSC" "-" (at 114.3 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c40a52cd-a348-465d-9bc4-8c0b7b1dc171))
-    (pin "2" (uuid 5eaa84eb-a686-4578-9bea-c673a4723981))
-    (pin "3" (uuid 7263d20f-3fcf-4353-a34e-ae1228d8c963))
-    (pin "4" (uuid 5c7ec055-6116-421d-9ed9-4196776371f8))
-    (pin "5" (uuid 394c5148-4e63-42ea-8a2a-624b114e63c2))
-    (pin "6" (uuid baf2bd2c-3c8f-4d0f-a4fd-eda965771cd5))
+    (property "Mouser" "-" (at 114.3 59.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e924cf36-df23-42c5-a1a4-df435dd1abc3))
+    (pin "2" (uuid 4a2b3e62-ba94-4bf1-981f-e9f8a50f2bd1))
+    (pin "3" (uuid 38548694-6b01-484d-9c85-6b7864cd56ad))
+    (pin "4" (uuid c8bed532-fe66-4443-aa58-cb2a85136362))
+    (pin "5" (uuid 9c5bfecd-f52e-496d-b0cc-d23be9413be9))
+    (pin "6" (uuid 6e82c43f-170f-407d-be29-4b9dda7a999d))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -723,11 +674,14 @@
     (property "Datasheet" "~" (at 160.02 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 160.02 67.31 0)
+    (property "LCSC" "C265283" (at 160.02 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b248da9a-1264-47ff-9e6c-fdd994a193ae))
-    (pin "2" (uuid ba222375-4a29-4cf9-8dde-68519b96623f))
+    (property "Mouser" "" (at 160.02 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0da8ac91-42d9-4bfa-91d3-defd40e7e097))
+    (pin "2" (uuid 180317f1-2751-482b-ae42-5c99b35502f0))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -735,47 +689,6 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "J?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Transistor_FET:Si4532DY") (at 162.56 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2b1419d1-2ec7-4034-b829-798822a68684)
-    (property "Reference" "Q402" (at 168.91 71.12 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Si4532DY" (at 168.91 73.66 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 167.64 74.295 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/SI4532DY-D.PDF" (at 165.1 72.39 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "LCSC" "C5123913" (at 162.56 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mouser" "781-SI4564DY-T1-GE3" (at 162.56 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid cde11cb5-d535-4fc2-9781-4356329acb90))
-    (pin "2" (uuid d187aa08-b221-42eb-bdae-ccf9cc69848e))
-    (pin "7" (uuid 0508f385-3417-4ab6-9954-9fcb361e685b))
-    (pin "8" (uuid 4159096d-9fc0-436d-a5bb-51f7ebec769d))
-    (pin "3" (uuid 1aa084f3-758d-4a8d-8655-6abc8da1cf64))
-    (pin "4" (uuid d9920c70-4306-43d4-872c-093f523e3399))
-    (pin "5" (uuid 29266593-fe25-4a46-9d26-b22d27478b8e))
-    (pin "6" (uuid 3f3d8528-4315-4f04-a287-dee73fed3ca4))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
-          (reference "Q402") (unit 1)
-        )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
-          (reference "Q?") (unit 1)
         )
       )
     )
@@ -796,7 +709,7 @@
     (property "Datasheet" "" (at 111.76 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 140e8ef9-8c51-44b7-907e-1da9e5e9b228))
+    (pin "1" (uuid 3e65ba97-5955-49b1-bcd7-e51479da0ffb))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -824,11 +737,14 @@
     (property "Datasheet" "~" (at 100.33 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 100.33 104.14 0)
+    (property "LCSC" "C265283" (at 100.33 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f813a7de-be79-4a75-98c6-64e46fcf13d4))
-    (pin "2" (uuid 0cd24c64-0b86-46fb-833c-29c40b16f520))
+    (property "Mouser" "" (at 100.33 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e251728f-1a45-469c-84fc-200b6571c90b))
+    (pin "2" (uuid affd223b-f092-4352-857c-9340de2677f8))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -856,7 +772,7 @@
     (property "Datasheet" "" (at 173.99 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 194e5e4b-f4f3-47ec-8225-9fbe85761f75))
+    (pin "1" (uuid 85714d03-36e3-46d0-8a00-6771319f2aaf))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -864,6 +780,39 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0614") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Transistor_FET:QM6006D") (at 102.87 109.22 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3b71c4d2-b913-40a9-9460-9637ecb5a6c5)
+    (property "Reference" "Q601" (at 109.22 107.95 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "WSF07N10" (at 109.22 110.49 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 107.95 111.125 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2008271937_Winsok-Semicon-WSF07N10_C719117.pdf" (at 102.87 109.22 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "LCSC" "C719117" (at 102.87 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8e0aa9c6-23b1-4edc-b921-3358f8e88ff0))
+    (pin "2" (uuid 548112a0-cc50-46e7-b4a7-26a7fb723499))
+    (pin "3" (uuid 212b3b10-a832-4d5a-acaa-2200938fdcc9))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
+          (reference "Q601") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
+          (reference "Q402") (unit 1)
         )
       )
     )
@@ -884,15 +833,18 @@
     (property "Datasheet" "~" (at 114.3 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 114.3 96.52 0)
+    (property "LCSC" "-" (at 114.3 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 83c6aa20-a4da-43e2-9b57-3d7572c9988c))
-    (pin "2" (uuid 5b1099cc-00a9-4ead-93ff-d9977eaf3b1f))
-    (pin "3" (uuid 779922b9-d4fb-4890-9633-cfb74a4aee74))
-    (pin "4" (uuid caab7917-41d5-4012-8337-9e89ecfd267e))
-    (pin "5" (uuid deb3757f-3d17-4681-a17a-f3d217250bea))
-    (pin "6" (uuid 6d0e8fb3-adcf-4407-9c04-5685c77d0dcc))
+    (property "Mouser" "-" (at 114.3 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid daf95748-ceb7-407a-b530-ccb0ba45b65e))
+    (pin "2" (uuid 1c38d08c-0795-4ec1-8d49-5edd01677003))
+    (pin "3" (uuid 537d8de1-400a-4b70-9df2-26b83c8b3728))
+    (pin "4" (uuid 372c1ee1-40f5-4005-a9fa-190dc98c81e2))
+    (pin "5" (uuid 5b6418f2-8780-4c05-accf-6e4dc8442160))
+    (pin "6" (uuid 755ebb55-b87c-4135-bd3a-762d430e245b))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -920,7 +872,7 @@
     (property "Datasheet" "" (at 176.53 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 33707284-4a51-4658-9119-1ba0e3ca8133))
+    (pin "1" (uuid 7b94f1c5-05c1-45cc-acca-32b94bf697c7))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -948,15 +900,18 @@
     (property "Datasheet" "~" (at 173.99 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 173.99 96.52 0)
+    (property "LCSC" "-" (at 173.99 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3307a282-6c64-443c-8a41-fd841af0f777))
-    (pin "2" (uuid 8e644f53-0971-43ef-8a75-d6b3cdce5daf))
-    (pin "3" (uuid 58b6bf70-c6ec-42ed-99ba-a858f3f8988d))
-    (pin "4" (uuid 7ea02013-5ab6-4135-ac5a-a35e5a33a9a9))
-    (pin "5" (uuid 9e651724-0665-44c2-ab26-105ebbc448f4))
-    (pin "6" (uuid b3b6c006-ed8d-4529-b63c-eb106cfa7622))
+    (property "Mouser" "-" (at 173.99 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 569bf980-5d23-4de8-b92b-ee6f3760aa24))
+    (pin "2" (uuid 73b5cd8f-8200-4275-b072-2a3c4878d8f9))
+    (pin "3" (uuid 969e440d-4f52-46fb-95ef-7d4d9c39bfc6))
+    (pin "4" (uuid bbc2b657-7f42-4201-9aba-543c7dbf854d))
+    (pin "5" (uuid 944b2749-0689-4056-bb0a-c2b7fa728a34))
+    (pin "6" (uuid 9bb262a9-1b80-43a5-bb2f-2e28c1e987ee))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -964,6 +919,39 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "J?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Transistor_FET:QM6006D") (at 162.56 72.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5ffa5538-7d29-4602-b370-81f16d04d4c0)
+    (property "Reference" "Q601" (at 168.91 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "WSF07N10" (at 168.91 73.66 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 167.64 74.295 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2008271937_Winsok-Semicon-WSF07N10_C719117.pdf" (at 162.56 72.39 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "LCSC" "C719117" (at 162.56 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 048646a8-e18e-47d4-b39a-f720ea226c9a))
+    (pin "2" (uuid 7ae1c2d7-b568-4117-bcfd-03f57ea76b8f))
+    (pin "3" (uuid 4d2324e8-cccb-429c-bb34-5f53a78b6b06))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
+          (reference "Q601") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
+          (reference "Q403") (unit 1)
         )
       )
     )
@@ -984,15 +972,18 @@
     (property "Datasheet" "~" (at 173.99 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 173.99 59.69 0)
+    (property "LCSC" "-" (at 173.99 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aafad371-57ff-48cb-a92f-6cc83b862658))
-    (pin "2" (uuid 63310f98-9a0e-4623-a9a5-3464c41eb6b4))
-    (pin "3" (uuid 7d87f5e6-bf34-43ee-8c9f-c63c7dc5ba1d))
-    (pin "4" (uuid b026f83e-9642-478a-a6d7-e20cee623abe))
-    (pin "5" (uuid b8cf008a-7f00-4c0c-8e93-5ec69f175c15))
-    (pin "6" (uuid 69c17351-4719-4535-873d-3b522325c37b))
+    (property "Mouser" "-" (at 173.99 59.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e622773e-11f1-45a3-a3d1-55375210e1ae))
+    (pin "2" (uuid d5d0609e-fd1c-43a6-9f61-a044dc72a793))
+    (pin "3" (uuid f10eac49-045d-4a40-b13e-6f65f3aefd4d))
+    (pin "4" (uuid 5ed6197b-286e-44a6-9ee6-224a8836916c))
+    (pin "5" (uuid 5f3ffe10-b617-4604-8ae3-00b8ea1de95b))
+    (pin "6" (uuid 38063b6a-7427-43eb-a2b1-c5f7784c008f))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1020,7 +1011,7 @@
     (property "Datasheet" "" (at 111.76 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fb5f8494-1202-4373-9c7f-dae40ceb6007))
+    (pin "1" (uuid 44a7fa34-0ec9-460f-b8a9-91be3f023f8d))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1028,6 +1019,39 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0604") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Transistor_FET:QM6006D") (at 102.87 72.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 75d0ba7b-4732-4140-9aed-679f6963cca8)
+    (property "Reference" "Q601" (at 109.22 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "WSF07N10" (at 109.22 73.66 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 107.95 74.295 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2008271937_Winsok-Semicon-WSF07N10_C719117.pdf" (at 102.87 72.39 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "LCSC" "C719117" (at 102.87 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4efe7928-5118-4351-aa18-89bf5a8e37c2))
+    (pin "2" (uuid bedb4dcb-899a-455c-a619-825f20b24027))
+    (pin "3" (uuid 1f991be8-214d-4f7b-978f-eebeba8b89e5))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
+          (reference "Q601") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
+          (reference "Q401") (unit 1)
         )
       )
     )
@@ -1048,7 +1072,7 @@
     (property "Datasheet" "" (at 114.3 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0f000a81-1316-4d9b-94b7-5b0c99a864e4))
+    (pin "1" (uuid 2d1d9506-67af-4d91-8ac0-3d234f0e704e))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1076,7 +1100,7 @@
     (property "Datasheet" "" (at 114.3 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid db9f20fa-b6d1-442f-a166-adebbda59d16))
+    (pin "1" (uuid 1cc5f055-3e2c-4b5a-abc8-d41f75636582))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1104,7 +1128,7 @@
     (property "Datasheet" "" (at 116.84 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c8631a7a-4713-4734-b2ef-76f797968c6e))
+    (pin "1" (uuid 3406acf9-299b-4d30-aa98-2070306440af))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1112,47 +1136,6 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0608") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Transistor_FET:Si4532DY") (at 102.87 109.22 0) (unit 2)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8dd33b60-2dad-4c3b-b7f0-d78ebb35ab80)
-    (property "Reference" "Q401" (at 109.22 107.95 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Si4532DY" (at 109.22 110.49 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 107.95 111.125 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/SI4532DY-D.PDF" (at 105.41 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "LCSC" "C5123913" (at 102.87 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mouser" "781-SI4564DY-T1-GE3" (at 102.87 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 32e85fcf-8641-4571-8b33-dea6e5f5edd5))
-    (pin "2" (uuid 479a18b2-cbc7-4646-88a7-77b19a4b6f8a))
-    (pin "7" (uuid 381c96d1-2d63-4ef3-ba78-15a01585c947))
-    (pin "8" (uuid c6dd8bbf-da09-424b-ab21-076b4d30269a))
-    (pin "3" (uuid 74c6c7ea-01ba-4a64-8f66-a32a3926a24c))
-    (pin "4" (uuid d014fdce-5b0c-4b66-a552-7deb976e06bf))
-    (pin "5" (uuid 462ef8b2-b7a8-4e92-bb9b-ad70c2dd6f25))
-    (pin "6" (uuid ca9f4124-acbe-4ad3-bd04-e6b55e6bd092))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
-          (reference "Q401") (unit 2)
-        )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
-          (reference "Q?") (unit 2)
         )
       )
     )
@@ -1173,7 +1156,7 @@
     (property "Datasheet" "" (at 176.53 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f1b7a565-020d-428a-99fc-801697588e55))
+    (pin "1" (uuid 54894dab-9f43-4009-860d-9e0fab38dc97))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1201,7 +1184,7 @@
     (property "Datasheet" "" (at 171.45 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2b77309f-69b2-4279-b165-12fc093377e0))
+    (pin "1" (uuid d83bcab6-2800-4cb0-bd8e-8daccd31bf52))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1229,7 +1212,7 @@
     (property "Datasheet" "" (at 173.99 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b6a28ec3-affa-43f3-8874-d04178501a70))
+    (pin "1" (uuid aa9a8c56-82f9-4692-84ae-3ecc11009d66))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1257,7 +1240,7 @@
     (property "Datasheet" "" (at 165.1 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 016cec14-25f4-4fa5-85ad-236d81f5c1c3))
+    (pin "1" (uuid 599a547d-bda5-44d6-b1e1-6fa1fb09a0ca))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1265,6 +1248,39 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0609") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Transistor_FET:QM6006D") (at 162.56 109.22 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a5c7500d-e08c-49b0-bd59-a20821d84d86)
+    (property "Reference" "Q601" (at 168.91 107.95 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "WSF07N10" (at 168.91 110.49 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 167.64 111.125 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2008271937_Winsok-Semicon-WSF07N10_C719117.pdf" (at 162.56 109.22 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "LCSC" "C719117" (at 162.56 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 12d26845-8b51-439b-acca-9451df3b6707))
+    (pin "2" (uuid aeb9e86d-5471-4827-b461-06c9b4cc63b8))
+    (pin "3" (uuid 1a09b4fc-00ec-4265-8117-f46b105d5c66))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
+          (reference "Q601") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
+          (reference "Q404") (unit 1)
         )
       )
     )
@@ -1285,11 +1301,14 @@
     (property "Datasheet" "~" (at 100.33 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 100.33 67.31 0)
+    (property "LCSC" "C265283" (at 100.33 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 74c01dc9-e6fb-4a08-a824-313cf7387074))
-    (pin "2" (uuid d1ec85e0-4823-418e-b1fc-092aeb08d1b6))
+    (property "Mouser" "" (at 100.33 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 554ec648-b6b0-4497-a469-0e9a3143a22b))
+    (pin "2" (uuid db4aa944-dbb1-481b-98ca-014f787f9b8d))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1317,7 +1336,7 @@
     (property "Datasheet" "" (at 116.84 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c22687a8-b7a4-4820-9ae5-8bdc8a89d054))
+    (pin "1" (uuid 10b07e90-facb-483c-b12e-49aa3f5755af))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1345,7 +1364,7 @@
     (property "Datasheet" "" (at 105.41 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9c4506a2-b574-4b7a-ae81-65aa38d7bc55))
+    (pin "1" (uuid ee009c66-f7e9-4f05-8d7c-9181bab13f4d))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1353,47 +1372,6 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0601") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Transistor_FET:Si4532DY") (at 162.56 109.22 0) (unit 2)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d2fcf4cc-b735-4cc9-b628-9882cc8c5daa)
-    (property "Reference" "Q402" (at 168.91 107.95 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Si4532DY" (at 168.91 110.49 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 167.64 111.125 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/SI4532DY-D.PDF" (at 165.1 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "LCSC" "C5123913" (at 162.56 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mouser" "781-SI4564DY-T1-GE3" (at 162.56 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 32e85fcf-8641-4571-8b33-dea6e5f5edd6))
-    (pin "2" (uuid 479a18b2-cbc7-4646-88a7-77b19a4b6f8b))
-    (pin "7" (uuid 381c96d1-2d63-4ef3-ba78-15a01585c948))
-    (pin "8" (uuid c6dd8bbf-da09-424b-ab21-076b4d30269b))
-    (pin "3" (uuid 249e23b1-4771-45a2-b44d-5b43b9e57f4b))
-    (pin "4" (uuid 5e4b60c2-5c03-4abe-84bb-37a5fa90b954))
-    (pin "5" (uuid 88261cbe-7b3a-468f-9af1-9513589d6391))
-    (pin "6" (uuid 4114e21d-f124-4230-8350-f690791e140e))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
-          (reference "Q402") (unit 2)
-        )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
-          (reference "Q?") (unit 2)
         )
       )
     )
@@ -1414,7 +1392,7 @@
     (property "Datasheet" "" (at 105.41 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 872f6af6-48b3-4f92-9c27-5796e8196a77))
+    (pin "1" (uuid 2a4b8794-ffe8-4fc1-b7d0-ad36188146c8))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1442,11 +1420,14 @@
     (property "Datasheet" "~" (at 160.02 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 160.02 104.14 0)
+    (property "LCSC" "C265283" (at 160.02 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3a1038f4-44f4-4698-a971-85205eac48a8))
-    (pin "2" (uuid 73a9430d-11f2-4779-a508-dcd59a484215))
+    (property "Mouser" "" (at 160.02 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fa49eb47-1945-4e11-bcff-4fdb333bb042))
+    (pin "2" (uuid 9b3e1af0-13a1-4510-b40b-1ef6c7736f34))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1474,7 +1455,7 @@
     (property "Datasheet" "" (at 171.45 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 39de680d-cb6f-4c3d-8b56-e99db68a1992))
+    (pin "1" (uuid 5d93b261-a426-41f8-b252-782a9348bc8d))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
@@ -1482,47 +1463,6 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0611") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Transistor_FET:Si4532DY") (at 102.87 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f266d4f2-8a25-4668-b85a-d11a8a7e45f4)
-    (property "Reference" "Q401" (at 109.22 71.12 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Si4532DY" (at 109.22 73.66 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 107.95 74.295 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/SI4532DY-D.PDF" (at 105.41 72.39 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "LCSC" "C5123913" (at 102.87 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mouser" "781-SI4564DY-T1-GE3" (at 102.87 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e74e21f4-7556-4952-8f2e-568353eb7783))
-    (pin "2" (uuid ef734ac4-177f-4e8c-ba5b-1d861ef52c8f))
-    (pin "7" (uuid cb0eb34a-0d3c-42e7-9c07-da0a6aa1aaaf))
-    (pin "8" (uuid fe914a31-7f63-4488-9c22-1d6803efb7de))
-    (pin "3" (uuid 1aa084f3-758d-4a8d-8655-6abc8da1cf65))
-    (pin "4" (uuid d9920c70-4306-43d4-872c-093f523e339a))
-    (pin "5" (uuid 29266593-fe25-4a46-9d26-b22d27478b8f))
-    (pin "6" (uuid 3f3d8528-4315-4f04-a287-dee73fed3ca5))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/de1de65c-a337-4e62-96f2-b643c87b37a8"
-          (reference "Q401") (unit 1)
-        )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
-          (reference "Q?") (unit 1)
         )
       )
     )

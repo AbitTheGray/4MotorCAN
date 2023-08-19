@@ -380,7 +380,7 @@
     (uuid e56cc0b2-735b-4e0d-9005-f7c240d515e7)
   )
 
-  (text "- 24V -> 12V (buck converter)\n- 24V -> 5V (buck converter)\n- 5V or USB (diodes) -> 3.3V (LDO)"
+  (text "- 24V -> 12V (buck converter), fans only - 1A max\n- 24V -> 5V (buck converter), 3A ?\n- 5V or USB (diodes) -> 3.3V (LDO), RP2040 only 250mA with 500mA peak?"
     (at 30.48 34.29 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1397ce72-be04-4b6b-a97d-0dd4a6838429)
@@ -436,7 +436,7 @@
     (property "Datasheet" "" (at 73.66 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9aa707f9-883c-4e7a-a095-8ffe7c09450b))
+    (pin "1" (uuid 37719cac-05e1-40cd-8c09-3c8d695474b6))
     (instances
       (project "Charger"
         (path "/16a89f0a-88d3-42f5-a8f1-2ef510493fd4"
@@ -444,11 +444,11 @@
         )
       )
       (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR0402") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
+          (reference "#PWR0302") (unit 1)
         )
       )
     )
@@ -463,42 +463,42 @@
     (property "Value" "USB_C_Receptacle_USB2.0" (at 34.29 144.78 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 38.1 165.1 0)
+    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal" (at 38.1 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 38.1 165.1 0)
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2111231930_SHOU-HAN-TYPE-C-16PIN-2MD-073_C2765186.pdf" (at 38.1 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 34.29 165.1 0)
+    (property "LCSC" "C2765186" (at 34.29 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Mouser" "" (at 34.29 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "A1" (uuid da774ae5-959d-4d4f-973e-12424bbb5737))
-    (pin "A12" (uuid e540ef99-fbdf-4f04-ac61-647d96a9edba))
-    (pin "A4" (uuid 1412aad5-944d-4f7b-bfa2-f6e052732e97))
-    (pin "A5" (uuid 840de4c7-128f-4642-9e3e-f106111903ca))
-    (pin "A6" (uuid 157d1f19-8b17-4881-8cee-a648cd697fcb))
-    (pin "A7" (uuid 8b61bb79-f869-439a-ba26-c60dc212265f))
-    (pin "A8" (uuid 4a8d643e-d03b-4114-bb68-0edb042ce769))
-    (pin "A9" (uuid 58cd51e6-50bd-483b-b5c6-c589b5bf6740))
-    (pin "B1" (uuid e28afd19-c1b3-4ea6-9b7a-9e9be1515e29))
-    (pin "B12" (uuid ea99940f-ba36-4bbd-9a76-87b9f299528c))
-    (pin "B4" (uuid 2e5bec91-ecd4-46b3-bd3c-dc69be0103ba))
-    (pin "B5" (uuid 5057e1d4-16ba-4c75-b264-49bc8562c988))
-    (pin "B6" (uuid c6244cd4-9703-4d05-a276-de4de355fe18))
-    (pin "B7" (uuid 28c4ab4e-3d06-4ecc-b32d-4b759097bd67))
-    (pin "B8" (uuid cac09303-b1d8-4e6f-bf56-f0e033304816))
-    (pin "B9" (uuid 34a0234e-4837-4f7a-b1c1-5076060ec4f7))
-    (pin "S1" (uuid 3b14c6b7-6d78-4df5-824b-07ea27bc382f))
+    (pin "A1" (uuid 992a2ad0-6231-48ec-9508-b625e70aa904))
+    (pin "A12" (uuid 95c913a3-af2e-422a-85e9-f81ee3fa1dde))
+    (pin "A4" (uuid 7a050d8e-1ae4-4529-aca6-430b4e48fbe6))
+    (pin "A5" (uuid 360c85ee-6244-4396-a2e2-7375a7e80758))
+    (pin "A6" (uuid fd7a1613-3b9b-47b5-80f5-9738b062ab1d))
+    (pin "A7" (uuid 5dccdbfa-24eb-4ffa-9a25-bda69651286c))
+    (pin "A8" (uuid 4f40afc9-4449-4438-ac01-e35a4837cc5f))
+    (pin "A9" (uuid 8907191e-572c-4b75-8fbd-8fbe5416affa))
+    (pin "B1" (uuid 16535bf9-455a-4fed-a9bc-7cc2f78e20af))
+    (pin "B12" (uuid 278e46e1-3259-4423-9cbe-a3c1b680c68a))
+    (pin "B4" (uuid 4546ed8f-975c-4ebc-85d5-7020f8ec3806))
+    (pin "B5" (uuid 76f026f5-b57c-431d-beac-a8f8d1d76d85))
+    (pin "B6" (uuid b7b42d0f-92db-43e3-9604-3e8a4c4797b2))
+    (pin "B7" (uuid 215fcd88-526c-4fe3-a3c4-aa14c832615d))
+    (pin "B8" (uuid 1d45a255-b273-418a-80ba-361d1a18a152))
+    (pin "B9" (uuid 6c8f62ef-fdcc-4164-845a-206bbd322dbc))
+    (pin "S1" (uuid 7832abe2-5ddb-4312-8c02-889986b504bc))
     (instances
       (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
-          (reference "J?") (unit 1)
-        )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "J?") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
+          (reference "J301") (unit 1)
         )
       )
     )
@@ -519,18 +519,18 @@
     (property "Datasheet" "~" (at 68.58 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6963d784-a517-4f33-a8d1-b636ea54deda))
-    (pin "2" (uuid b5949752-34b1-4ad1-a523-f7034549fdea))
+    (pin "1" (uuid f080ccee-3e3c-4ab3-ad95-11a5a614c98c))
+    (pin "2" (uuid d105940d-6176-40d6-a4e5-888d99a5d0ab))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "R?") (unit 1)
         )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
-          (reference "R?") (unit 1)
-        )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "R?") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
+          (reference "R302") (unit 1)
         )
       )
     )
@@ -551,18 +551,18 @@
     (property "Datasheet" "~" (at 68.58 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 67086609-d81f-43dd-b1b0-bbec01120837))
-    (pin "2" (uuid 856e7352-6193-4f69-b21a-7737dddcd22c))
+    (pin "1" (uuid 4a1229a2-4544-43e2-8b11-dd0d02d9c34c))
+    (pin "2" (uuid 42f41765-2f85-43f9-ba70-73a3bbbac63f))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "R?") (unit 1)
         )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
-          (reference "R?") (unit 1)
-        )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "R?") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
+          (reference "R301") (unit 1)
         )
       )
     )
@@ -583,7 +583,7 @@
     (property "Datasheet" "" (at 34.29 187.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a23c7052-688e-44fb-809e-2133b895edfb))
+    (pin "1" (uuid 7bad61a6-4634-43cd-ac6f-d3aa9409e87e))
     (instances
       (project "Charger"
         (path "/16a89f0a-88d3-42f5-a8f1-2ef510493fd4"
@@ -591,11 +591,11 @@
         )
       )
       (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR0401") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
+          (reference "#PWR0301") (unit 1)
         )
       )
     )

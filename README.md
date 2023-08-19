@@ -6,7 +6,14 @@ The brain is [RP2040](https://www.raspberrypi.com/products/rp2040/) (can be flas
 All the power and commands are provided by [CAN bus](https://en.wikipedia.org/wiki/CAN_bus) [Molex Micro-Fit 3.0 connector](https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/micro-fit-connectors).
 If you do not want to use CAN bus, you must provide 24V and GND on the connector and connect USB-C to your controller.
 
-This project was not yet tested. Use at your own risk.
+Warning:
+- This project uses RP2040 as if it was a 5V microcontroller.
+RP2040 is not officially 5V-tolerant but is reported by users to be able to process 5V input.
+And 3V output is 60% of 5V which should be enough for HIGH digital value of 5V devices.
+- There is no overvoltage protection, do not turn axis motors too fast (manually)
+- Fan connectors have over-current protection (resettable fuse) in case of short circuit but it will stop them from working
+
+**This project was not yet tested. Use at your own risk.**
 
 ## Features
 
@@ -15,7 +22,7 @@ This project was not yet tested. Use at your own risk.
 - 4x SPI header for external motor encoder
 - 4x Limit Switch
 - RGB header
-- 3x 2pin Temperature sensor (resistor)
+- 4x 2pin Temperature sensor (resistor)
 - 4x 2pin Fan control (5V / 12V / 24V)
 - Heating enable ("trigger", cannot power the heating)
 

@@ -221,6 +221,53 @@
         )
       )
     )
+    (symbol "Device:Fuse" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "F" (at 2.032 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Fuse" (at -1.905 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at -1.778 0 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "fuse" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Fuse" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "*Fuse*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Fuse_0_1"
+        (rectangle (start -0.762 -2.54) (end 0.762 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "Fuse_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -819,8 +866,14 @@
   (junction (at 120.65 46.99) (diameter 0) (color 0 0 0 0)
     (uuid 6f3a230a-20f1-4792-a0f7-56723a038d29)
   )
+  (junction (at 148.59 34.29) (diameter 0) (color 0 0 0 0)
+    (uuid 77148dc5-4590-4d90-8826-e4437701fd97)
+  )
   (junction (at 245.11 156.21) (diameter 0) (color 0 0 0 0)
     (uuid b105067c-7e6f-4b6e-a6cb-1e3f7a306486)
+  )
+  (junction (at 146.05 31.75) (diameter 0) (color 0 0 0 0)
+    (uuid d7730bc5-e05f-411a-ba41-e19feb614008)
   )
   (junction (at 257.81 156.21) (diameter 0) (color 0 0 0 0)
     (uuid e27bc25a-0f60-45f4-92e8-051bd2395ec9)
@@ -856,6 +909,10 @@
   (wire (pts (xy 120.65 29.21) (xy 115.57 29.21))
     (stroke (width 0) (type default))
     (uuid 2a47a9d7-ad2b-4377-b4bb-1b91b5d5d18a)
+  )
+  (wire (pts (xy 146.05 31.75) (xy 146.05 46.99))
+    (stroke (width 0) (type default))
+    (uuid 33fc6f16-58d5-44ac-8fd9-c374eb9dd88b)
   )
   (wire (pts (xy 120.65 44.45) (xy 115.57 44.45))
     (stroke (width 0) (type default))
@@ -913,6 +970,10 @@
     (stroke (width 0) (type default))
     (uuid 7317eeb6-e389-40c7-9ca2-90a8c20af7a7)
   )
+  (wire (pts (xy 133.35 34.29) (xy 148.59 34.29))
+    (stroke (width 0) (type default))
+    (uuid 7665885d-906b-4bff-9a5c-fd8d0591c258)
+  )
   (wire (pts (xy 120.65 29.21) (xy 120.65 31.75))
     (stroke (width 0) (type default))
     (uuid 7d6211ec-4f69-4312-8429-e4eff402ac4e)
@@ -941,9 +1002,29 @@
     (stroke (width 0) (type default))
     (uuid a60cef0a-3bd3-47d3-9030-44158760621a)
   )
+  (wire (pts (xy 148.59 30.48) (xy 148.59 34.29))
+    (stroke (width 0) (type default))
+    (uuid d14dca6a-4897-4846-b4da-f2def7b700bb)
+  )
   (wire (pts (xy 251.46 156.21) (xy 257.81 156.21))
     (stroke (width 0) (type default))
     (uuid da0a351a-413f-4d78-a51a-ea120f56abc0)
+  )
+  (wire (pts (xy 146.05 30.48) (xy 146.05 31.75))
+    (stroke (width 0) (type default))
+    (uuid dd1ad452-4c21-4208-b5f0-e189dc2ebead)
+  )
+  (wire (pts (xy 133.35 49.53) (xy 148.59 49.53))
+    (stroke (width 0) (type default))
+    (uuid dda91d8c-3098-40d7-b3fb-323941b52a8b)
+  )
+  (wire (pts (xy 133.35 46.99) (xy 146.05 46.99))
+    (stroke (width 0) (type default))
+    (uuid e27ab46f-2d39-41e1-ac7d-0d78eae84964)
+  )
+  (wire (pts (xy 133.35 31.75) (xy 146.05 31.75))
+    (stroke (width 0) (type default))
+    (uuid eb9b1fa9-93a6-46d9-9678-47ba9d3dfc74)
   )
   (wire (pts (xy 256.54 43.18) (xy 256.54 45.72))
     (stroke (width 0) (type default))
@@ -965,7 +1046,15 @@
     (stroke (width 0) (type default))
     (uuid fae6a376-4e99-429c-8bac-b6d732bd1220)
   )
+  (wire (pts (xy 148.59 34.29) (xy 148.59 49.53))
+    (stroke (width 0) (type default))
+    (uuid fdc327a7-f478-4ea0-882f-a90689bc8ccc)
+  )
 
+  (text "Bed Heating" (at 191.77 104.14 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 2df36046-c3b4-416d-9d5c-e48813e6b47d)
+  )
   (text "Power LED" (at 256.54 20.32 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 4231b18c-0bcd-4d15-a988-f37d1a8f148e)
@@ -986,6 +1075,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8e204077-a2bb-4220-976c-3b252e6c9ac3)
   )
+  (text "0.5mA" (at 262.89 24.13 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 934cf180-a4eb-41ab-998d-daf69e0c3708)
+  )
   (text "Test Points" (at 201.93 147.32 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9b3b1366-4bf5-41a2-b4ce-7fa618326a6c)
@@ -1001,10 +1094,6 @@
   (text "RGB LEDs\n (strip)" (at 224.79 24.13 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid cc2c3c37-a1c8-4f83-af2c-0c0104a31b42)
-  )
-  (text "3.3V or 5V?" (at 223.52 54.61 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid cdfed41e-95c4-4333-b338-12232d185ef6)
   )
   (text "Limit Switch" (at 219.71 52.07 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
@@ -1036,10 +1125,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "Heating Enable" (shape input) (at 184.15 86.36 180) (fields_autoplaced)
+  (global_label "Bed Heating" (shape input) (at 184.15 86.36 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 4233c742-cd78-4755-be83-95e8d2aa5c9d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.6508 86.36 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.493 86.36 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1092,6 +1181,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "Head Heating" (shape input) (at 184.15 97.79 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b58eb87c-bed6-4422-bdd2-65ee52703b24)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 168.2835 97.79 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "RGB" (shape input) (at 229.87 33.02 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid bc992038-e486-4f2b-8931-5049f56c62b5)
@@ -1136,7 +1232,7 @@
     (property "Datasheet" "" (at 229.87 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid afe3a398-9262-4188-be34-e7f7ca095cf2))
+    (pin "1" (uuid ed7373ee-fe24-42d4-ac8f-eac20555944a))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1172,7 +1268,7 @@
     (property "Datasheet" "" (at 115.57 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 641f14dc-a0b5-4f86-bae8-67b0982959d2))
+    (pin "1" (uuid 2a7e1e3d-c75a-4312-9956-f1b3bddad612))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -1185,7 +1281,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 229.87 153.67 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 10959805-6f02-4a05-97cf-0bba64c3910d)
-    (property "Reference" "TP?" (at 229.87 158.75 0)
+    (property "Reference" "TP101" (at 229.87 158.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 232.41 158.242 0)
@@ -1203,11 +1299,11 @@
     (property "Mouser" "-" (at 229.87 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 95723b8e-ae5e-49ba-9e58-686cf16ff6d1))
+    (pin "1" (uuid 3e174a25-bd5b-4a08-978e-5a4452ba05f5))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "TP?") (unit 1)
+          (reference "TP101") (unit 1)
         )
       )
     )
@@ -1228,7 +1324,7 @@
     (property "Datasheet" "" (at 276.86 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0183297c-e01d-465d-a5d4-fc22e045fc96))
+    (pin "1" (uuid 36850d0c-25e6-4738-a54b-8dfeafa316ae))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
@@ -1256,11 +1352,47 @@
     (property "Datasheet" "" (at 203.2 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 68ad4c6e-f3c9-4beb-bbf8-65ef4ffaecda))
+    (pin "1" (uuid 0210d779-4c9f-4701-8dcb-f604a1db1ae1))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0119") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 184.15 100.33 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 14930086-4906-4305-917e-353004842ead)
+    (property "Reference" "#PWR?" (at 184.15 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 184.15 104.14 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 184.15 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 184.15 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4d17869c-4d66-4063-8e42-cf3bb5f5778d))
+    (instances
+      (project "Head"
+        (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
+          (reference "#PWR0134") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -1281,7 +1413,7 @@
     (property "Datasheet" "" (at 184.15 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a5dc388c-f2bc-43db-ae42-6c870949a33b))
+    (pin "1" (uuid 58e0b5fa-5eb8-488e-9d52-668acde8b9ad))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1305,7 +1437,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 234.95 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1858f443-6ad0-40a0-b71a-2547f43648fa)
-    (property "Reference" "J?" (at 237.49 31.75 0)
+    (property "Reference" "J111" (at 237.49 31.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RGB" (at 237.49 34.29 0)
@@ -1317,16 +1449,19 @@
     (property "Datasheet" "~" (at 234.95 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 234.95 33.02 0)
+    (property "LCSC" "C144394" (at 234.95 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 951c3e48-9414-4d23-955d-a58a2d2013ca))
-    (pin "2" (uuid e95ebd45-dbb6-4ae5-9464-828c1905756d))
-    (pin "3" (uuid 76c5fd00-237b-4ebf-8130-4a8a3ac51bda))
+    (property "Mouser" "" (at 234.95 33.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8ad60163-c4f1-42d3-a47b-203775ce1387))
+    (pin "2" (uuid 4859651c-2c06-4236-9497-bd1811eb3137))
+    (pin "3" (uuid f2879b05-a120-4c20-b9cc-a25cafde66c1))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J111") (unit 1)
         )
       )
     )
@@ -1335,7 +1470,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x03_Top_Bottom") (at 128.27 49.53 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e1d75b6-804c-402c-888d-aec15ec64f93)
-    (property "Reference" "J?" (at 127 44.45 0)
+    (property "Reference" "J102" (at 127 44.45 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Molex Micro-Fit 3.0 2x03 - CAN bus" (at 127 54.61 0)
@@ -1347,44 +1482,22 @@
     (property "Datasheet" "~" (at 128.27 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 128.27 49.53 0)
+    (property "LCSC" "C234188" (at 128.27 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 699c96fc-9ba7-45bc-a74e-246bb3a80135))
-    (pin "2" (uuid e121c7d2-d436-4176-be09-cb8b96c5a6f3))
-    (pin "3" (uuid 9609559c-8cb1-454d-a730-8910c9f44e4d))
-    (pin "4" (uuid 52b8e65f-b35a-4b81-9b1f-ad0277d22759))
-    (pin "5" (uuid 12e92461-7de8-48d5-9587-a7da748537b3))
-    (pin "6" (uuid 23358259-c20a-4037-8e08-0080e4f474e4))
+    (property "Mouser" "538-43045-0612" (at 128.27 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 675b33dd-27ef-4455-b712-610dd320e370))
+    (pin "2" (uuid 8b29d8ed-e49a-475e-bfd4-69daf1703694))
+    (pin "3" (uuid 2427f12f-7265-440a-bf94-e06f2bce0d56))
+    (pin "4" (uuid 9d098344-934c-4fc8-a047-4016a58e6c1c))
+    (pin "5" (uuid 5cc45686-c62c-4bc5-bd2f-64dad59db561))
+    (pin "6" (uuid b0f05e7d-d42a-4716-b3d9-e5c092ae1fa1))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+24V") (at 133.35 34.29 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1eb2a982-a93b-411b-a659-296adef63d8f)
-    (property "Reference" "#PWR0105" (at 129.54 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+24V" (at 135.89 34.29 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 133.35 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 133.35 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b20dc090-6ceb-4924-b963-bc707212693c))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR0105") (unit 1)
+          (reference "J102") (unit 1)
         )
       )
     )
@@ -1405,7 +1518,7 @@
     (property "Datasheet" "" (at 115.57 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid db77126b-bfa1-4deb-962f-3db65a41a554))
+    (pin "1" (uuid a906ba40-4412-484e-88f8-8b076819a1c2))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -1424,17 +1537,20 @@
     (property "Value" "White" (at 261.62 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 262.89 43.18 0)
+    (property "Footprint" "LED_SMD:LED_0402_1005Metric" (at 262.89 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 262.89 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Mouser" "" (at 262.89 43.18 0)
+    (property "Mouser" "720-LWQH8G-Q2S2-3K5L" (at 262.89 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8ba1830f-9523-4389-a4d0-59395aaff63a))
-    (pin "2" (uuid 4da5abed-57bf-4e6b-942d-000ef1ec7f5f))
+    (property "LCSC" "C434448" (at 262.89 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 05325847-9dc0-438e-8440-0bf9c778b302))
+    (pin "2" (uuid 73c5675a-7198-45b7-a8e2-55919e170595))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1443,7 +1559,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "D?") (unit 1)
+          (reference "D102") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "D?") (unit 1)
@@ -1455,35 +1571,10 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 224.79 90.17 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2c6b28b8-53bc-4167-9a91-88b76bd861c6)
-    (property "Reference" "#PWR0135" (at 224.79 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 224.79 86.36 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 224.79 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 224.79 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3b1fc5b3-0f10-43d2-b2fd-f5b1b56c6f87))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR0135") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 234.95 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 2cb9e7f6-2b58-46b6-a44b-28c615cf45f0)
-    (property "Reference" "J?" (at 237.49 91.44 0)
+    (property "Reference" "J143" (at 237.49 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Limit Switch" (at 237.49 93.98 0)
@@ -1495,16 +1586,19 @@
     (property "Datasheet" "~" (at 234.95 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 234.95 92.71 0)
+    (property "LCSC" "C144394" (at 234.95 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 523f4915-47b8-4258-ac2f-51c0140ce297))
-    (pin "2" (uuid ed170218-b9fe-4306-94e7-b680c847e6eb))
-    (pin "3" (uuid 0850fc6c-c95d-41f8-ac2e-ef53c809136f))
+    (property "Mouser" "" (at 234.95 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid af3025b8-4047-437f-9d60-123fe309e337))
+    (pin "2" (uuid 21598074-a7fa-4559-b03a-e9ecba5bbe12))
+    (pin "3" (uuid f2c630c2-99e6-4758-8efb-0ba2d45ee0a4))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J143") (unit 1)
         )
       )
     )
@@ -1525,7 +1619,7 @@
     (property "Datasheet" "" (at 182.88 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 32b0c24c-cde8-48c4-9f1f-d669b78147c7))
+    (pin "1" (uuid d37a5432-23bf-4936-88e0-4e0db7717f2e))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1546,56 +1640,6 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 224.79 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 328790c9-2d15-45f4-bb8f-83be822e3a36)
-    (property "Reference" "#PWR0137" (at 224.79 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 224.79 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 224.79 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 224.79 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ed0ce679-d13f-46c8-89d6-7906bf938158))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR0137") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 224.79 105.41 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 32e3db07-2fab-45c2-8051-ba702b34dec4)
-    (property "Reference" "#PWR0136" (at 224.79 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 224.79 101.6 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 224.79 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 224.79 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e34ca61e-e578-4136-9b36-53d6dbe08cd8))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR0136") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+5V") (at 229.87 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3318bd30-5ea5-41f6-9e04-b8c7c0b1f46b)
@@ -1611,7 +1655,7 @@
     (property "Datasheet" "" (at 229.87 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3ba66d82-6fb4-4242-b95b-cc154ecd6d6c))
+    (pin "1" (uuid 75bf8c5c-6f30-49e5-b57a-4efd5c70a649))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -1636,7 +1680,7 @@
     (property "Datasheet" "" (at 182.88 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3eedb050-64b9-418b-ba5a-1c2473d8e793))
+    (pin "1" (uuid 5f8b050c-310e-435f-84e9-ced5e68a1c0d))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1672,7 +1716,7 @@
     (property "Datasheet" "" (at 229.87 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 009205a1-1068-4402-bcd3-9d37d153e01c))
+    (pin "1" (uuid 2cc86b4c-0822-4dd6-8329-cb4be3e6fa7a))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1708,7 +1752,7 @@
     (property "Datasheet" "" (at 256.54 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a33344ec-ab50-4ec5-bdc3-7777001abda5))
+    (pin "1" (uuid 5c84d3bb-ff16-46cb-920f-397416e3ae51))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1732,7 +1776,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 212.09 153.67 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 36bcf4c8-d968-4652-a1db-ab50f540dde4)
-    (property "Reference" "TP?" (at 212.09 158.75 0)
+    (property "Reference" "TP103" (at 212.09 158.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 214.63 158.242 0)
@@ -1750,36 +1794,11 @@
     (property "Mouser" "-" (at 212.09 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a22827be-9ecb-4c07-876e-e8380134aabc))
+    (pin "1" (uuid 33d87bcd-2a88-4820-baf6-452566e8765c))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "TP?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+48V") (at 133.35 46.99 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 38ae1d30-9fd2-48ab-8dcd-798c82f8cdd2)
-    (property "Reference" "#PWR0107" (at 129.54 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+48V" (at 135.89 46.99 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 133.35 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 133.35 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 27799741-7f54-4f2d-9c21-cd5d13e5773d))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR0107") (unit 1)
+          (reference "TP103") (unit 1)
         )
       )
     )
@@ -1800,7 +1819,7 @@
     (property "Datasheet" "" (at 229.87 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1827b528-56f7-4b2f-ab6f-a79d969a3e7f))
+    (pin "1" (uuid 990d2f68-7f1b-481b-aadf-43f637a4d45e))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -1825,7 +1844,7 @@
     (property "Datasheet" "" (at 276.86 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 664a97a2-2e97-4c8c-a7d5-914311e00a9c))
+    (pin "1" (uuid 5bbfb1f5-008e-4658-8196-185df7e379a3))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
@@ -1847,17 +1866,20 @@
     (property "Value" "White" (at 261.62 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 262.89 55.88 0)
+    (property "Footprint" "LED_SMD:LED_0402_1005Metric" (at 262.89 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 262.89 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Mouser" "" (at 262.89 55.88 0)
+    (property "Mouser" "720-LWQH8G-Q2S2-3K5L" (at 262.89 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a6986f6b-a64d-4559-b959-9ab57d3e00f2))
-    (pin "2" (uuid 8b3bb8aa-e224-4bfb-b9bc-77e7fa2775af))
+    (property "LCSC" "C434448" (at 262.89 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d20f29da-b6b1-46c8-90f1-80d18f3907db))
+    (pin "2" (uuid 4c268ec5-b390-4376-bab4-794a40a2e113))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1866,13 +1888,38 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "D?") (unit 1)
+          (reference "D103") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "D?") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "D?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+24V") (at 148.59 22.86 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3fd15b96-faa5-4280-bc30-c6b7f496976c)
+    (property "Reference" "#PWR0108" (at 148.59 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+24V" (at 148.59 20.32 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 148.59 22.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 148.59 22.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b20d6ed9-85b9-4599-8308-16009c49d27d))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -1893,7 +1940,7 @@
     (property "Datasheet" "" (at 229.87 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 16b17585-ba38-441b-97a2-a8905afb226e))
+    (pin "1" (uuid 462f9958-a69c-44cd-828c-21c35807333e))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1923,17 +1970,20 @@
     (property "Value" "White" (at 261.62 33.02 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 262.89 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0402_1005Metric" (at 262.89 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 262.89 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Mouser" "" (at 262.89 30.48 0)
+    (property "Mouser" "720-LWQH8G-Q2S2-3K5L" (at 262.89 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 176b66ce-9fa7-427b-9f73-da94a40bfa07))
-    (pin "2" (uuid 1186ee4c-7876-4ce3-b8e1-eaf2e8127be2))
+    (property "LCSC" "C434448" (at 262.89 30.48 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fd73d8e7-50a1-4b47-9246-abd8fb00cb58))
+    (pin "2" (uuid 4a5abeb1-9e23-4b33-9278-60e8dbefb6c5))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -1942,7 +1992,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "D?") (unit 1)
+          (reference "D101") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "D?") (unit 1)
@@ -1957,7 +2007,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 187.96 41.91 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4ac5d6ba-033a-4002-a425-85e1391fbd52)
-    (property "Reference" "J?" (at 190.5 39.37 0)
+    (property "Reference" "J122" (at 190.5 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Temperature" (at 190.5 41.91 0)
@@ -1969,15 +2019,18 @@
     (property "Datasheet" "~" (at 187.96 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 187.96 41.91 0)
+    (property "LCSC" "C265283" (at 187.96 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c4e8f7d0-107f-4ef8-8ef6-494fb0646126))
-    (pin "2" (uuid 9c8d7c57-eaba-4810-96c2-6aa044e50145))
+    (property "Mouser" "" (at 187.96 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 92a10f74-a95c-4fa3-82f8-3591cb53954a))
+    (pin "2" (uuid a53f7882-a41e-46c8-b79d-652af4a6e21c))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J122") (unit 1)
         )
       )
     )
@@ -1986,7 +2039,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 238.76 152.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 52b3140b-a710-4517-851b-36c6c68cf5d5)
-    (property "Reference" "H?" (at 238.76 148.59 0)
+    (property "Reference" "H101" (at 238.76 148.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole_Pad" (at 241.3 152.3999 0)
@@ -2004,11 +2057,11 @@
     (property "Mouser" "-" (at 238.76 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e4dc1f21-fe57-4ac6-a970-43cbfd2dfb01))
+    (pin "1" (uuid 5a940821-a610-4475-b762-32416c78146d))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "H?") (unit 1)
+          (reference "H101") (unit 1)
         )
       )
     )
@@ -2017,7 +2070,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 234.95 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 541b8a21-7326-448e-8371-b83f015d8779)
-    (property "Reference" "J?" (at 237.49 106.68 0)
+    (property "Reference" "J144" (at 237.49 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Limit Switch" (at 237.49 109.22 0)
@@ -2029,16 +2082,19 @@
     (property "Datasheet" "~" (at 234.95 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 234.95 107.95 0)
+    (property "LCSC" "C144394" (at 234.95 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aad7a65f-36c6-4ae4-9ca3-96478b9db9f2))
-    (pin "2" (uuid 9c2ffe3b-92af-4c7a-ad7e-34a16f3e3939))
-    (pin "3" (uuid 595ae6f1-93bc-4c24-89ac-8bb2950d6717))
+    (property "Mouser" "" (at 234.95 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e9be3a1a-4fca-488d-92db-e821f7b2fa5b))
+    (pin "2" (uuid d2015faf-27d3-401f-82d4-14007896cd93))
+    (pin "3" (uuid 8f8166bb-e010-4613-94b3-a14716673296))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J144") (unit 1)
         )
       )
     )
@@ -2053,17 +2109,20 @@
     (property "Value" "White" (at 261.62 83.82 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 262.89 81.28 0)
+    (property "Footprint" "LED_SMD:LED_0402_1005Metric" (at 262.89 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 262.89 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Mouser" "" (at 262.89 81.28 0)
+    (property "Mouser" "720-LWQH8G-Q2S2-3K5L" (at 262.89 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0abb4f75-47fa-4d88-aaab-0db255387f2d))
-    (pin "2" (uuid 5012cd31-c0b8-4a8c-9d32-7deab02ceb8c))
+    (property "LCSC" "C434448" (at 262.89 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e5c49c92-451d-4580-98bb-d923bec4ee67))
+    (pin "2" (uuid 60ff40e7-f562-4c72-851d-54db5179f397))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2072,7 +2131,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "D?") (unit 1)
+          (reference "D105") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "D?") (unit 1)
@@ -2099,7 +2158,7 @@
     (property "Datasheet" "" (at 229.87 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6da08ff0-b53d-43dd-bec3-a357bdedd8b5))
+    (pin "1" (uuid 0377c9fc-5447-4abb-ace1-1daae78153d5))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -2115,7 +2174,7 @@
     (property "Reference" "R?" (at 270.51 78.74 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "???" (at 270.51 81.28 90)
+    (property "Value" "600" (at 270.51 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 270.51 83.058 90)
@@ -2130,8 +2189,8 @@
     (property "Mouser" "" (at 270.51 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 96d09d7d-043f-499e-9623-600928468455))
-    (pin "2" (uuid c0e3c082-bef9-4994-8b1f-4290c433546f))
+    (pin "1" (uuid faf5f8ee-545d-45a3-a368-f6e519256415))
+    (pin "2" (uuid 13b479ba-d73d-4ca7-ad8f-f7eb77c99673))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2140,7 +2199,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "R?") (unit 1)
+          (reference "R105") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "R?") (unit 1)
@@ -2167,7 +2226,7 @@
     (property "Datasheet" "" (at 182.88 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8efd6f82-7d96-4716-832c-50b87558fb5a))
+    (pin "1" (uuid c3d9ffa5-06e4-43ec-b057-b33c25428de3))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2194,7 +2253,7 @@
     (property "Reference" "R?" (at 270.51 40.64 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "???" (at 270.51 43.18 90)
+    (property "Value" "42k" (at 270.51 43.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 270.51 44.958 90)
@@ -2209,8 +2268,8 @@
     (property "Mouser" "" (at 270.51 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a6bd56ae-6604-42ed-8a00-c3bfff7a33c8))
-    (pin "2" (uuid 2215fe92-8ecd-437e-9ca4-b247e0d035b3))
+    (pin "1" (uuid 71e74933-8fe3-447b-9509-322a1c21d4d2))
+    (pin "2" (uuid a2124ac4-6b62-462a-880c-3fdc8619ee8a))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2219,7 +2278,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "R?") (unit 1)
+          (reference "R102") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "R?") (unit 1)
@@ -2246,7 +2305,7 @@
     (property "Datasheet" "" (at 256.54 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b99198db-17e7-4a0c-97b4-ca6c7945afb9))
+    (pin "1" (uuid 4e11c054-1859-448b-b028-fdb063db48f1))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2270,7 +2329,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 234.95 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 6c630b0e-699a-461a-bf3c-176a233ce409)
-    (property "Reference" "J?" (at 237.49 76.2 0)
+    (property "Reference" "J142" (at 237.49 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Limit Switch" (at 237.49 78.74 0)
@@ -2282,16 +2341,19 @@
     (property "Datasheet" "~" (at 234.95 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 234.95 77.47 0)
+    (property "LCSC" "C144394" (at 234.95 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7695a6a7-1a23-47ee-a11b-4defa3d33b81))
-    (pin "2" (uuid 31dec8b3-051d-4b6d-bdeb-f6d7d76d448d))
-    (pin "3" (uuid c0940830-029f-424c-8acc-d6a42c31d5f9))
+    (property "Mouser" "" (at 234.95 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f966667a-3b32-47cf-9238-2b2e31222325))
+    (pin "2" (uuid cf965e0a-5634-421a-b120-ec82aa6ccf89))
+    (pin "3" (uuid c383c997-36bc-4164-a9c7-56f82d9f5c49))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J142") (unit 1)
         )
       )
     )
@@ -2303,7 +2365,7 @@
     (property "Reference" "R?" (at 270.51 27.94 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "???" (at 270.51 30.48 90)
+    (property "Value" "90k" (at 270.51 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 270.51 32.258 90)
@@ -2318,8 +2380,8 @@
     (property "Mouser" "" (at 270.51 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 691bb5fe-6788-4e87-85a5-f7511723924c))
-    (pin "2" (uuid abc6f618-156d-41c2-8379-6fa54658b252))
+    (pin "1" (uuid a49e5cae-7a1a-4b83-a3e2-abc75fd8a340))
+    (pin "2" (uuid e7366c49-ce31-410b-ad4f-9f2defc4713f))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2328,7 +2390,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "R?") (unit 1)
+          (reference "R101") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "R?") (unit 1)
@@ -2340,35 +2402,10 @@
     )
   )
 
-  (symbol (lib_id "power:+48V") (at 133.35 31.75 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 777702cd-fc33-4f72-adbb-7b007f2cb82c)
-    (property "Reference" "#PWR0104" (at 129.54 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+48V" (at 135.89 31.75 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 133.35 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 133.35 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e1719358-af15-4b71-962f-d49c13ea8212))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR0104") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Mechanical:MountingHole") (at 270.51 152.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 79b70d27-7dbb-4b81-adab-08ce95b5ba30)
-    (property "Reference" "H?" (at 270.51 148.59 0)
+    (property "Reference" "H111" (at 270.51 148.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole_Pad" (at 273.05 152.3999 0)
@@ -2389,7 +2426,7 @@
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "H?") (unit 1)
+          (reference "H111") (unit 1)
         )
       )
     )
@@ -2410,7 +2447,7 @@
     (property "Datasheet" "" (at 212.09 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8a61cd3c-dc32-4aad-9ba7-c87811817286))
+    (pin "1" (uuid 6206713a-d18b-48cf-84c4-2372153856e8))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -2435,7 +2472,7 @@
     (property "Datasheet" "" (at 229.87 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid acd20b32-ca86-43b9-8b53-acc2a61f7163))
+    (pin "1" (uuid 2b9180a1-5b44-493a-aa51-3fc401c32a8a))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2456,10 +2493,42 @@
     )
   )
 
+  (symbol (lib_id "Device:Fuse") (at 148.59 26.67 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7c0cc9cd-1f0e-43ae-8b2c-5dac20f19885)
+    (property "Reference" "F101" (at 149.86 25.4 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "65V 20A" (at 149.86 27.94 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 146.812 26.67 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://mouser.com/datasheet/2/54/bourns_01272020_SF_2410FA_W_datasheet-1892134.pdf" (at 148.59 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "" (at 148.59 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser" "652-SF-2410FA2000W-2" (at 148.59 26.67 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7004d6bb-63ca-4316-9a8d-96847458494e))
+    (pin "2" (uuid bcbe8a86-8c2f-42be-9988-2321feb76198))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
+          (reference "F101") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 187.96 64.77 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 7d42a89d-d735-4407-a5f1-117509a39b35)
-    (property "Reference" "J?" (at 190.5 62.23 0)
+    (property "Reference" "J124" (at 190.5 62.23 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Temperature" (at 190.5 64.77 0)
@@ -2471,15 +2540,18 @@
     (property "Datasheet" "~" (at 187.96 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 187.96 64.77 0)
+    (property "LCSC" "C265283" (at 187.96 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7ba1ade1-2903-443c-bd48-241c215159fe))
-    (pin "2" (uuid c0ef2fe4-bac8-4ae8-aff4-b99933da4142))
+    (property "Mouser" "" (at 187.96 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6ede7ba1-d96b-4ccd-b791-c40bc5d5eb9a))
+    (pin "2" (uuid b1bb83a2-5971-4195-94b3-8e5ca557b358))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J124") (unit 1)
         )
       )
     )
@@ -2500,7 +2572,7 @@
     (property "Datasheet" "" (at 220.98 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 306b6fb7-6107-441d-826f-3f7764f3cf2a))
+    (pin "1" (uuid 58a519ae-45be-4339-bf03-ebe74ecf4384))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -2525,7 +2597,7 @@
     (property "Datasheet" "" (at 182.88 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5ce5b359-841c-4e09-b269-6785c7ac5924))
+    (pin "1" (uuid 731d2ec0-ed55-4e33-bef0-bd9fe11773f7))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2546,26 +2618,33 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 224.79 74.93 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 81899033-8c53-4818-bb6d-e5daf84de705)
-    (property "Reference" "#PWR0134" (at 224.79 78.74 0)
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 189.23 100.33 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp yes)
+    (uuid 818a7ec5-9189-46ab-8f9a-20bc34137e69)
+    (property "Reference" "J132" (at 191.77 97.79 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Heating Enable" (at 191.77 100.33 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 189.23 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 224.79 71.12 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 224.79 74.93 0)
+    (property "Datasheet" "~" (at 189.23 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 224.79 74.93 0)
+    (property "LCSC" "C265283" (at 189.23 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bc547af4-7822-41a9-b6be-ed839b480d68))
+    (property "Mouser" "" (at 189.23 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6df99485-d84c-44c0-a929-37ee85d716dc))
+    (pin "2" (uuid 7a7361d4-1952-40a2-b1eb-6dec3418a4f9))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR0134") (unit 1)
+          (reference "J132") (unit 1)
         )
       )
     )
@@ -2574,7 +2653,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x03_Top_Bottom") (at 128.27 34.29 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b24e4c7-283c-41e9-80ee-5bacc5afa1c7)
-    (property "Reference" "J?" (at 127 29.21 0)
+    (property "Reference" "J101" (at 127 29.21 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Molex Micro-Fit 3.0 2x03 - CAN bus" (at 127 39.37 0)
@@ -2586,19 +2665,22 @@
     (property "Datasheet" "~" (at 128.27 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 128.27 34.29 0)
+    (property "LCSC" "C234188" (at 128.27 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5481036c-f387-4882-8722-9a2203ae8f3a))
-    (pin "2" (uuid cbfd14bb-c76f-4636-8323-9902f2dc4e57))
-    (pin "3" (uuid 572ff4d6-369f-4308-a2cf-febf6c77e4c4))
-    (pin "4" (uuid e1fbb5cc-c632-4336-b84a-ee68a2ebf11e))
-    (pin "5" (uuid a9600d34-313f-4116-8005-814f1a755f7f))
-    (pin "6" (uuid abb689dd-82ac-4a3b-94b3-dd6a4adb75c3))
+    (property "Mouser" "538-43045-0612" (at 128.27 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 33eeecc1-e149-48e2-b0ac-5453474356e1))
+    (pin "2" (uuid bd94175e-2d83-48bc-9590-36927df53a08))
+    (pin "3" (uuid 496c7a03-14d7-42ed-a58f-eb91eebe1445))
+    (pin "4" (uuid 9ca9a361-7f80-451e-8f49-f1e8491ac21b))
+    (pin "5" (uuid 7aea693f-37dc-42d5-9c31-c28f9ed22e79))
+    (pin "6" (uuid e0a9d991-187c-4152-a070-c0a902d55c9e))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J101") (unit 1)
         )
       )
     )
@@ -2619,7 +2701,7 @@
     (property "Datasheet" "" (at 256.54 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 206951de-258d-4b47-94ec-ddc968ffc895))
+    (pin "1" (uuid 0fadda4a-f4f2-4e1f-a2b2-8229b98e43d5))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2655,7 +2737,7 @@
     (property "Datasheet" "" (at 194.31 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 22ffecc2-0b19-4813-9bcc-83b65d9d341e))
+    (pin "1" (uuid c0a5018b-c77d-4970-a234-6e867b79cee7))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -2668,7 +2750,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 185.42 153.67 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 8ee923cd-7c0c-40d7-ad65-1c50a8009b18)
-    (property "Reference" "TP?" (at 185.42 158.75 0)
+    (property "Reference" "TP106" (at 185.42 158.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 187.96 158.242 0)
@@ -2686,36 +2768,11 @@
     (property "Mouser" "-" (at 185.42 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0936319d-f9cb-425f-bf52-5144a1c9e353))
+    (pin "1" (uuid aeab57bb-77c0-4c6d-a0b2-ba887177a5d3))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "TP?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+24V") (at 133.35 49.53 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9de1a5fa-cbfc-437a-a5da-b1244a84a9e8)
-    (property "Reference" "#PWR0108" (at 129.54 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+24V" (at 135.89 49.53 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 133.35 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 133.35 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fe9e80b4-4737-4907-9560-7541d5cdca2d))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR0108") (unit 1)
+          (reference "TP106") (unit 1)
         )
       )
     )
@@ -2736,7 +2793,7 @@
     (property "Datasheet" "" (at 276.86 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5c1556fc-7a93-4fbb-b2b5-9808cd865b4e))
+    (pin "1" (uuid 93add8b7-e37c-400a-842a-f8b28bfce4f7))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
@@ -2752,7 +2809,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 189.23 88.9 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a43e8839-a0f5-486f-8252-70f626c78686)
-    (property "Reference" "J?" (at 191.77 86.36 0)
+    (property "Reference" "J131" (at 191.77 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Heating Enable" (at 191.77 88.9 0)
@@ -2764,15 +2821,18 @@
     (property "Datasheet" "~" (at 189.23 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 189.23 88.9 0)
+    (property "LCSC" "C265283" (at 189.23 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d61abe3e-3315-4287-ac3c-c65bb94a46a4))
-    (pin "2" (uuid 8cb22733-b246-45d1-85ed-0713326d53b7))
+    (property "Mouser" "" (at 189.23 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2747ea02-a138-4ec0-9319-cbc5eec4f892))
+    (pin "2" (uuid 7de7bac2-72fd-4100-a050-d2c938fd1c91))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J131") (unit 1)
         )
       )
     )
@@ -2781,7 +2841,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 203.2 153.67 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid a4871f77-1975-4487-b3ec-a51bfdf1c83c)
-    (property "Reference" "TP?" (at 203.2 158.75 0)
+    (property "Reference" "TP104" (at 203.2 158.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 205.74 158.242 0)
@@ -2799,11 +2859,11 @@
     (property "Mouser" "-" (at 203.2 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4ae26eee-3687-4ac0-8afa-844b048a0754))
+    (pin "1" (uuid 25ec6291-11fc-47e2-b350-23eb77aa87b3))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "TP?") (unit 1)
+          (reference "TP104") (unit 1)
         )
       )
     )
@@ -2824,7 +2884,7 @@
     (property "Datasheet" "" (at 229.87 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 53198819-2f93-498b-b0fa-0d0aed49e96a))
+    (pin "1" (uuid 83cc808e-b69a-45af-bea9-28d8f2f71803))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -2837,7 +2897,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 245.11 152.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid b17e94c8-1aac-4842-9f10-fdf21b70e0fc)
-    (property "Reference" "H?" (at 245.11 148.59 0)
+    (property "Reference" "H102" (at 245.11 148.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole_Pad" (at 247.65 152.3999 0)
@@ -2855,11 +2915,11 @@
     (property "Mouser" "-" (at 245.11 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1323441e-ff00-4192-9a82-6fdd4333165d))
+    (pin "1" (uuid 150997fb-fe45-43b5-9777-f92268a049b8))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "H?") (unit 1)
+          (reference "H102") (unit 1)
         )
       )
     )
@@ -2868,7 +2928,7 @@
   (symbol (lib_id "power:GND") (at 257.81 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b212f0f5-32e7-466c-8309-ad681fce1a86)
-    (property "Reference" "#PWR?" (at 257.81 163.83 0)
+    (property "Reference" "#PWR0135" (at 257.81 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 257.81 161.29 0)
@@ -2880,11 +2940,11 @@
     (property "Datasheet" "" (at 257.81 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 883541bc-3ff7-45fc-a300-5961289510bd))
+    (pin "1" (uuid 33edd086-d181-49c4-8028-3f4195b6e5f1))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0135") (unit 1)
         )
       )
     )
@@ -2893,7 +2953,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 187.96 53.34 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid b3d55339-0aed-44f8-b529-06946fe6ce1a)
-    (property "Reference" "J?" (at 190.5 50.8 0)
+    (property "Reference" "J123" (at 190.5 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Temperature" (at 190.5 53.34 0)
@@ -2905,15 +2965,18 @@
     (property "Datasheet" "~" (at 187.96 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 187.96 53.34 0)
+    (property "LCSC" "C265283" (at 187.96 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fdece44a-6032-4c2c-8b38-b349d7628e76))
-    (pin "2" (uuid 044a6219-e54a-4a88-9ab7-e0ebb22ce715))
+    (property "Mouser" "" (at 187.96 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 091effc6-497b-417c-9de8-39bb1e51a6bd))
+    (pin "2" (uuid ff41f56c-7498-4475-8fd0-d06602250dea))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J123") (unit 1)
         )
       )
     )
@@ -2925,7 +2988,7 @@
     (property "Reference" "R?" (at 270.51 53.34 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "???" (at 270.51 55.88 90)
+    (property "Value" "18k" (at 270.51 55.88 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 270.51 57.658 90)
@@ -2940,8 +3003,8 @@
     (property "Mouser" "" (at 270.51 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6461d519-76d6-4908-9d70-b20645e78f5c))
-    (pin "2" (uuid 46a4eacd-c20a-453c-adfc-7d21e1049d08))
+    (pin "1" (uuid 2fe54f6b-7f91-4eee-93f3-e644a9c24cda))
+    (pin "2" (uuid 81c56d53-57b2-43a4-b6b6-9ba6966d28af))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -2950,7 +3013,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "R?") (unit 1)
+          (reference "R103") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "R?") (unit 1)
@@ -2977,7 +3040,7 @@
     (property "Datasheet" "" (at 256.54 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5cf48f79-a293-4189-a285-5a859dc8f2d8))
+    (pin "1" (uuid 18643508-0ca0-4609-9861-f2f9c0e62072))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -3013,7 +3076,7 @@
     (property "Datasheet" "" (at 256.54 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e22adb1a-639f-49ba-8dd9-9a3e28d8568f))
+    (pin "1" (uuid ca576354-bcae-4f0f-beb3-0ae469946860))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -3037,7 +3100,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 257.81 152.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid c02e6515-2310-4f96-85e7-0bbaca76a9aa)
-    (property "Reference" "H?" (at 257.81 148.59 0)
+    (property "Reference" "H104" (at 257.81 148.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole_Pad" (at 260.35 152.3999 0)
@@ -3055,11 +3118,11 @@
     (property "Mouser" "-" (at 257.81 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 74cdba50-c4db-459a-8cc4-77eb547efc5c))
+    (pin "1" (uuid 78536059-52e5-4081-8d8c-7db6969e77cf))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "H?") (unit 1)
+          (reference "H104") (unit 1)
         )
       )
     )
@@ -3068,7 +3131,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 276.86 152.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid c7e396b7-e777-4edd-a088-03588d393f94)
-    (property "Reference" "H?" (at 276.86 148.59 0)
+    (property "Reference" "H112" (at 276.86 148.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole_Pad" (at 279.4 152.3999 0)
@@ -3089,7 +3152,7 @@
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "H?") (unit 1)
+          (reference "H112") (unit 1)
         )
       )
     )
@@ -3098,7 +3161,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 187.96 31.75 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c9b3904e-b1ea-497c-9a96-1983ae1511a2)
-    (property "Reference" "J?" (at 190.5 29.21 0)
+    (property "Reference" "J121" (at 190.5 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Temperature" (at 190.5 31.75 0)
@@ -3110,15 +3173,18 @@
     (property "Datasheet" "~" (at 187.96 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 187.96 31.75 0)
+    (property "LCSC" "C265283" (at 187.96 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1e4762b8-7f9b-4eb3-991e-32884ed658a9))
-    (pin "2" (uuid 13326b75-85e8-45fb-b8a9-ca1c26a5373f))
+    (property "Mouser" "" (at 187.96 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2778be64-7353-4109-adba-a07d80fd582f))
+    (pin "2" (uuid 620e7f89-df30-49f6-9e4a-68bdd1278f74))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J121") (unit 1)
         )
       )
     )
@@ -3127,7 +3193,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 251.46 152.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid cb5b7ff5-fd0f-4c49-a4ad-33764621467f)
-    (property "Reference" "H?" (at 251.46 148.59 0)
+    (property "Reference" "H103" (at 251.46 148.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole_Pad" (at 254 152.3999 0)
@@ -3145,11 +3211,11 @@
     (property "Mouser" "-" (at 251.46 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5b0998fe-66cd-4cbf-a4c9-b6d68436b4d2))
+    (pin "1" (uuid d506300b-c2bb-4af1-906a-e538758720e9))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "H?") (unit 1)
+          (reference "H103") (unit 1)
         )
       )
     )
@@ -3158,7 +3224,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 194.31 153.67 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid cbf21523-9ea8-466f-8d5e-b75395e054d8)
-    (property "Reference" "TP?" (at 194.31 158.75 0)
+    (property "Reference" "TP105" (at 194.31 158.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 196.85 158.242 0)
@@ -3176,11 +3242,11 @@
     (property "Mouser" "-" (at 194.31 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6a661518-4d52-4866-a09a-a8fa47d0656e))
+    (pin "1" (uuid 65e364b7-08ed-45a7-95f6-65c0f92cf57b))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "TP?") (unit 1)
+          (reference "TP105") (unit 1)
         )
       )
     )
@@ -3195,17 +3261,20 @@
     (property "Value" "White" (at 261.62 71.12 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 262.89 68.58 0)
+    (property "Footprint" "LED_SMD:LED_0402_1005Metric" (at 262.89 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 262.89 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Mouser" "" (at 262.89 68.58 0)
+    (property "Mouser" "720-LWQH8G-Q2S2-3K5L" (at 262.89 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7860354d-dd4f-4105-b610-fc8d45c28b5c))
-    (pin "2" (uuid 445fcc9e-b716-414f-b8c1-c53cc721f83d))
+    (property "LCSC" "C434448" (at 262.89 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bb521a9f-2367-43a9-9cde-429ad125177e))
+    (pin "2" (uuid 782652d8-903d-4de6-acd8-7e78141e3f9c))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -3214,7 +3283,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "D?") (unit 1)
+          (reference "D104") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "D?") (unit 1)
@@ -3241,7 +3310,7 @@
     (property "Datasheet" "" (at 229.87 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid be7306a7-9ca3-41ef-a0bc-c8126d22ec65))
+    (pin "1" (uuid b17ba59e-620a-4bdc-ab84-b99369724da9))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -3257,7 +3326,7 @@
     (property "Reference" "R?" (at 270.51 66.04 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "???" (at 270.51 68.58 90)
+    (property "Value" "4k" (at 270.51 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 270.51 70.358 90)
@@ -3272,8 +3341,8 @@
     (property "Mouser" "" (at 270.51 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4c0d9284-cdb3-475a-b83f-6ff48861581e))
-    (pin "2" (uuid 984ed166-a653-40f8-87f7-d1b9b20d0419))
+    (pin "1" (uuid 91e97956-6d95-42ad-984d-c00014320ee8))
+    (pin "2" (uuid 5e3d3e23-0bbd-4f99-b762-70f4432b4bb2))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -3282,7 +3351,7 @@
       )
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "R?") (unit 1)
+          (reference "R104") (unit 1)
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/48301791-0cbb-476d-b990-e4256493ff46"
           (reference "R?") (unit 1)
@@ -3309,7 +3378,7 @@
     (property "Datasheet" "" (at 229.87 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 935c01b6-84ee-4797-8073-16db2e8caaba))
+    (pin "1" (uuid f508e1a4-67fe-4292-8487-3078066f0de2))
     (instances
       (project "Head"
         (path "/b9b3639b-d1ec-4afc-996f-5c09c09c3046"
@@ -3345,7 +3414,7 @@
     (property "Datasheet" "" (at 276.86 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f943be9d-4cde-4301-9ef5-73a11180d0e5))
+    (pin "1" (uuid c76a4369-8371-4f55-b76a-8c06a9154ec6))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -3370,7 +3439,7 @@
     (property "Datasheet" "" (at 276.86 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6162dded-19f0-4404-82f2-129954e9fbae))
+    (pin "1" (uuid 236cf44e-eb56-4d76-9d17-a86199478f13))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -3386,10 +3455,42 @@
     )
   )
 
+  (symbol (lib_id "Device:Fuse") (at 146.05 26.67 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e6963504-2147-4942-a6bd-adc21f72e3cd)
+    (property "Reference" "F102" (at 144.78 25.4 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "65V 20A" (at 144.78 27.94 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 147.828 26.67 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://mouser.com/datasheet/2/54/bourns_01272020_SF_2410FA_W_datasheet-1892134.pdf" (at 146.05 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "" (at 146.05 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser" "652-SF-2410FA2000W-2" (at 146.05 26.67 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 82baf76e-3791-4919-8315-93802d67e5ba))
+    (pin "2" (uuid b2065d47-4f86-4905-a28c-574a6ea6e83a))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
+          (reference "F102") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 234.95 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e79d3345-37e6-437b-845b-8a8662b0913d)
-    (property "Reference" "J?" (at 237.49 60.96 0)
+    (property "Reference" "J141" (at 237.49 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Limit Switch" (at 237.49 63.5 0)
@@ -3401,16 +3502,44 @@
     (property "Datasheet" "~" (at 234.95 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 234.95 62.23 0)
+    (property "LCSC" "C144394" (at 234.95 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6d864fad-8de5-4074-9242-d8a998043014))
-    (pin "2" (uuid ba1cc2b2-77fc-4695-9827-fd2370744169))
-    (pin "3" (uuid 90516b2e-46fc-45a7-8fbf-6e8cbf820076))
+    (property "Mouser" "" (at 234.95 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4014ae96-7bf1-4d57-af34-5a8d60412a7f))
+    (pin "2" (uuid cc55b2e9-73e9-48dc-8e32-409ec6d0da15))
+    (pin "3" (uuid 3e0b7f16-3270-41ad-99fc-0f8b28ec2654))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "J?") (unit 1)
+          (reference "J141") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+48V") (at 146.05 22.86 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f54832ea-8202-4fb5-990e-0ac21e7e66a5)
+    (property "Reference" "#PWR0107" (at 146.05 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+48V" (at 146.05 20.32 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 146.05 22.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 146.05 22.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 403192d3-3dd1-4b4a-929b-a59043c4688e))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -3419,7 +3548,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 176.53 153.67 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid f6955a53-277d-4fe9-949e-ebf63a138c31)
-    (property "Reference" "TP?" (at 176.53 158.75 0)
+    (property "Reference" "TP107" (at 176.53 158.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 179.07 158.242 0)
@@ -3437,11 +3566,11 @@
     (property "Mouser" "-" (at 176.53 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2859cedc-6490-40ca-8fa1-4f0e8e766178))
+    (pin "1" (uuid 3bc98487-7e8a-48c6-8d23-c2d479a9bbda))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "TP?") (unit 1)
+          (reference "TP107") (unit 1)
         )
       )
     )
@@ -3462,7 +3591,7 @@
     (property "Datasheet" "" (at 185.42 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f6d85d7d-eafa-467b-afea-a03146f9bbce))
+    (pin "1" (uuid 9a03ac01-5fb1-4d7c-8d31-76e083ed084f))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -3475,7 +3604,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 220.98 153.67 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid f9543f8c-cc97-44ae-91fc-091d065ad2c0)
-    (property "Reference" "TP?" (at 220.98 158.75 0)
+    (property "Reference" "TP102" (at 220.98 158.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 223.52 158.242 0)
@@ -3493,11 +3622,11 @@
     (property "Mouser" "-" (at 220.98 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d1fd11f9-47bc-4ca1-a12e-5413a500ace5))
+    (pin "1" (uuid 6f5f916e-fcaf-43c8-8821-0b14f1110a40))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
-          (reference "TP?") (unit 1)
+          (reference "TP102") (unit 1)
         )
       )
     )
@@ -3518,7 +3647,7 @@
     (property "Datasheet" "" (at 229.87 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1d986142-0446-448f-b981-c8c6aca424a6))
+    (pin "1" (uuid f1c3d0bb-5393-449b-a277-ca5a85044aec))
     (instances
       (project "Can3DPrinter4Motor"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
@@ -3552,7 +3681,7 @@
     (property "Sheetname" "Power Supply" (at 48.26 50.8 0)
       (effects (font (size 5 5) bold))
     )
-    (property "Sheetfile" "Power Supply.kicad_sch" (at 15.24 61.5446 0)
+    (property "Sheetfile" "PowerSupply.kicad_sch" (at 15.24 61.5446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
