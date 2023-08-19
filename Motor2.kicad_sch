@@ -596,11 +596,11 @@
         )
       )
     )
-    (symbol "power:+24V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+48V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+24V" (at 0 3.556 0)
+      (property "Value" "+48V" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -612,10 +612,10 @@
       (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+24V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+48V\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+24V_0_1"
+      (symbol "+48V_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -641,9 +641,9 @@
           (fill (type none))
         )
       )
-      (symbol "+24V_1_1"
+      (symbol "+48V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+24V" (effects (font (size 1.27 1.27))))
+          (name "+48V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -742,6 +742,9 @@
     )
   )
 
+  (junction (at 91.44 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid 2043772a-462e-4522-bab8-62a886e51b91)
+  )
   (junction (at 121.92 173.99) (diameter 0) (color 0 0 0 0)
     (uuid 5ba3affa-7646-4eae-8fae-a24a31b76b08)
   )
@@ -759,9 +762,6 @@
   )
   (junction (at 101.6 41.91) (diameter 0) (color 0 0 0 0)
     (uuid dd960307-5be2-437c-89ee-b958ac4b1361)
-  )
-  (junction (at 91.44 39.37) (diameter 0) (color 0 0 0 0)
-    (uuid e4d36943-404f-42ea-aff0-3e32bd7c9c29)
   )
 
   (wire (pts (xy 118.11 180.34) (xy 121.92 180.34))
@@ -893,10 +893,6 @@
     (uuid f8227952-69cd-41cf-9908-4a1ea6166be6)
   )
 
-  (text "48V ?" (at 88.9 34.29 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 17ab43eb-4300-467d-ac8e-27adb732d513)
-  )
   (text "Step Reference Output" (at 27.94 153.67 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 33318faf-0c05-4562-8c8e-b8cf83f18c2b)
@@ -2008,6 +2004,37 @@
     )
   )
 
+  (symbol (lib_id "power:+48V") (at 91.44 39.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid cd19e217-4b26-4f0c-8ecb-5ad9c59431a5)
+    (property "Reference" "#PWR0204" (at 91.44 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+48V" (at 91.44 35.56 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 91.44 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 91.44 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6be3078b-3f0b-485a-803b-74ecfe5a265c))
+    (instances
+      (project "Can3DPrinter4Motor"
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
+          (reference "#PWR0204") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
+          (reference "#PWR0113") (unit 1)
+        )
+        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/c731393f-82c9-42eb-b1cc-cc38a32cf9d8"
+          (reference "#PWR0701") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 76.2 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cdace477-6d5e-4141-a242-81f8d647b9e5)
@@ -2077,43 +2104,6 @@
         )
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/47aa3abf-8d06-4c45-872c-33ec1f9a6564"
           (reference "#PWR0912") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+24V") (at 91.44 39.37 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid dcc80f3f-3255-4f0f-b1b9-d44975c391a9)
-    (property "Reference" "#PWR?" (at 91.44 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+24V" (at 91.44 35.56 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 91.44 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 91.44 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0d04d065-1adc-42cf-a765-c5eb00a6aa06))
-    (instances
-      (project "Can3DPrinter4Motor"
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
-          (reference "#PWR0635") (unit 1)
-        )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/c731393f-82c9-42eb-b1cc-cc38a32cf9d8"
-          (reference "#PWR0705") (unit 1)
-        )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/596394bf-80ea-4be7-ad96-94dd67657b85"
-          (reference "#PWR0805") (unit 1)
-        )
-        (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/47aa3abf-8d06-4c45-872c-33ec1f9a6564"
-          (reference "#PWR0905") (unit 1)
         )
       )
     )
