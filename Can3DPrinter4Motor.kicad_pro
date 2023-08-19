@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.35
+          "min_clearance": 0.39999999999999997
         }
       },
       "diff_pair_dimensions": [
@@ -185,7 +185,8 @@
         0.4,
         0.5,
         0.75,
-        1.0
+        1.0,
+        1.5
       ],
       "via_dimensions": [
         {
@@ -435,8 +436,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "Custom"
+    ],
+    "pinned_symbol_libs": [
+      "Custom"
+    ]
   },
   "meta": {
     "filename": "Can3DPrinter4Motor.kicad_pro",

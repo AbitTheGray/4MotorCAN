@@ -7,24 +7,25 @@ All the power and commands are provided by [CAN bus](https://en.wikipedia.org/wi
 If you do not want to use CAN bus, you must provide 24V and GND on the connector and connect USB-C to your controller.
 
 Warning:
+- **This project was not yet tested. Use at your own risk.**
 - This project uses RP2040 as if it was a 5V microcontroller.
 RP2040 is not officially 5V-tolerant but is reported by users to be able to process 5V input.
 And 3V output is 60% of 5V which should be enough for HIGH digital value of 5V devices.
 - There is no overvoltage protection, do not turn axis motors too fast (manually)
 - Fan connectors have over-current protection (resettable fuse) in case of short circuit but it will stop them from working
 
-**This project was not yet tested. Use at your own risk.**
+I have tried putting as many notes into the schematic as possible.
+Buck converters and LDOs have their voltage limits close to the input pins (those are recommended limits, not absolute ones).
 
 ## Features
 
 - [CAN bus](https://en.wikipedia.org/wiki/CAN_bus) with power (24V + 48V passthrough)
-- 4x [TMC5160](https://www.trinamic.com/products/integrated-circuits/details/tmc5160/) to control motors (with build-in encoder)
-- 4x SPI header for external motor encoder
+- 4x [TMC5160](https://www.trinamic.com/products/integrated-circuits/details/tmc5160/) to control motors (slotted PCB) with build-in encoder
 - 4x Limit Switch
 - RGB header
 - 4x 2pin Temperature sensor (resistor)
 - 4x 2pin Fan control (5V / 12V / 24V)
-- Heating enable ("trigger", cannot power the heating)
+- 2x Heating enable ("trigger", cannot power the heating)
 
 Due to [JST XH connectors](https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/xh-connector/) used almost everywhere, you should not esceed 3A.
 
@@ -41,4 +42,3 @@ Keep in mind those limits can be lower for higher-temperature environments (like
 | RP2040 (microcontroller) | 50 mA                | 85 °C           |
 | W25Q128JVS (flash)       | 4 mA                 | 85 °C (105 °C)  |
 | TMC5160 (motor driver)   |                      | 125 °C          |
-| Si4532DY (MOSFET)        | 3.9 A                | 150 °C          |

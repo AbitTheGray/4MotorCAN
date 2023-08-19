@@ -6,3 +6,5 @@ fp-info-cache
 *-backups
 .idea
 *.blend1
+*auto_saved_files#
+~*.lck
