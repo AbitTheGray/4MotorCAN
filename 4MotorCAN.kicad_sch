@@ -1031,10 +1031,6 @@
     (stroke (width 0) (type default))
     (uuid a60cef0a-3bd3-47d3-9030-44158760621a)
   )
-  (wire (pts (xy 62.23 177.8) (xy 60.96 177.8))
-    (stroke (width 0) (type default))
-    (uuid ca381663-1c23-4fbe-9607-480d4f92ec05)
-  )
   (wire (pts (xy 62.23 161.29) (xy 62.23 165.1))
     (stroke (width 0) (type default))
     (uuid d14dca6a-4897-4846-b4da-f2def7b700bb)
@@ -1091,6 +1087,11 @@
   (text "Power LED" (at 91.44 21.59 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 4231b18c-0bcd-4d15-a988-f37d1a8f148e)
+  )
+  (text "Crossed TestPoints (DNP) can be measured at LEDs (D101 - D105)"
+    (at 170.18 163.83 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 56777a6e-3ca4-4a3b-ac15-5c04fe3ad330)
   )
   (text "Temperature" (at 205.74 24.13 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
@@ -1293,7 +1294,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0133") (unit 1)
         )
@@ -1324,7 +1325,7 @@
     )
     (pin "1" (uuid 2a7e1e3d-c75a-4312-9956-f1b3bddad612))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0101") (unit 1)
         )
@@ -1355,7 +1356,7 @@
     )
     (pin "1" (uuid 3e174a25-bd5b-4a08-978e-5a4452ba05f5))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "TP101") (unit 1)
         )
@@ -1380,7 +1381,7 @@
     )
     (pin "1" (uuid 36850d0c-25e6-4738-a54b-8dfeafa316ae))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0202") (unit 1)
         )
@@ -1408,7 +1409,7 @@
     )
     (pin "1" (uuid 0210d779-4c9f-4701-8dcb-f604a1db1ae1))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0119") (unit 1)
         )
@@ -1438,7 +1439,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0134") (unit 1)
         )
@@ -1474,7 +1475,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0139") (unit 1)
         )
@@ -1513,7 +1514,7 @@
     (pin "2" (uuid 4859651c-2c06-4236-9497-bd1811eb3137))
     (pin "3" (uuid f2879b05-a120-4c20-b9cc-a25cafde66c1))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J111") (unit 1)
         )
@@ -1549,7 +1550,7 @@
     (pin "5" (uuid 5cc45686-c62c-4bc5-bd2f-64dad59db561))
     (pin "6" (uuid b0f05e7d-d42a-4716-b3d9-e5c092ae1fa1))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J102") (unit 1)
         )
@@ -1577,7 +1578,7 @@
     )
     (pin "1" (uuid a906ba40-4412-484e-88f8-8b076819a1c2))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0106") (unit 1)
         )
@@ -1614,7 +1615,7 @@
           (reference "D?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "D102") (unit 1)
         )
@@ -1629,7 +1630,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 262.89 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2cb9e7f6-2b58-46b6-a44b-28c615cf45f0)
     (property "Reference" "J143" (at 265.43 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1653,7 +1654,7 @@
     (pin "2" (uuid 21598074-a7fa-4559-b03a-e9ecba5bbe12))
     (pin "3" (uuid f2c630c2-99e6-4758-8efb-0ba2d45ee0a4))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J143") (unit 1)
         )
@@ -1683,7 +1684,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0125") (unit 1)
         )
@@ -1714,7 +1715,7 @@
     )
     (pin "1" (uuid 75bf8c5c-6f30-49e5-b57a-4efd5c70a649))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0132") (unit 1)
         )
@@ -1744,7 +1745,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0123") (unit 1)
         )
@@ -1780,7 +1781,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0127") (unit 1)
         )
@@ -1816,7 +1817,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0110") (unit 1)
         )
@@ -1831,7 +1832,7 @@
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 212.09 153.67 180) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp yes)
     (uuid 36bcf4c8-d968-4652-a1db-ab50f540dde4)
     (property "Reference" "TP103" (at 212.09 158.75 0)
       (effects (font (size 1.27 1.27)))
@@ -1853,7 +1854,7 @@
     )
     (pin "1" (uuid 33d87bcd-2a88-4820-baf6-452566e8765c))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "TP103") (unit 1)
         )
@@ -1878,7 +1879,7 @@
     )
     (pin "1" (uuid 990d2f68-7f1b-481b-aadf-43f637a4d45e))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0121") (unit 1)
         )
@@ -1903,7 +1904,7 @@
     )
     (pin "1" (uuid 5bbfb1f5-008e-4658-8196-185df7e379a3))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0207") (unit 1)
         )
@@ -1943,7 +1944,7 @@
           (reference "D?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "D103") (unit 1)
         )
@@ -1974,7 +1975,7 @@
     )
     (pin "1" (uuid b20d6ed9-85b9-4599-8308-16009c49d27d))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0108") (unit 1)
         )
@@ -2004,7 +2005,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0129") (unit 1)
         )
@@ -2047,7 +2048,7 @@
           (reference "D?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "D101") (unit 1)
         )
@@ -2085,7 +2086,7 @@
     (pin "1" (uuid 92a10f74-a95c-4fa3-82f8-3591cb53954a))
     (pin "2" (uuid a53f7882-a41e-46c8-b79d-652af4a6e21c))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J122") (unit 1)
         )
@@ -2116,7 +2117,7 @@
     )
     (pin "1" (uuid 5a940821-a610-4475-b762-32416c78146d))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "H101") (unit 1)
         )
@@ -2125,7 +2126,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 262.89 109.22 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 541b8a21-7326-448e-8371-b83f015d8779)
     (property "Reference" "J144" (at 265.43 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2149,7 +2150,7 @@
     (pin "2" (uuid d2015faf-27d3-401f-82d4-14007896cd93))
     (pin "3" (uuid 8f8166bb-e010-4613-94b3-a14716673296))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J144") (unit 1)
         )
@@ -2186,7 +2187,7 @@
           (reference "D?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "D105") (unit 1)
         )
@@ -2217,7 +2218,7 @@
     )
     (pin "1" (uuid 0377c9fc-5447-4abb-ace1-1daae78153d5))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0102") (unit 1)
         )
@@ -2254,7 +2255,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "R105") (unit 1)
         )
@@ -2290,7 +2291,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0124") (unit 1)
         )
@@ -2333,7 +2334,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "R102") (unit 1)
         )
@@ -2369,7 +2370,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0112") (unit 1)
         )
@@ -2384,7 +2385,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 262.89 78.74 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6c630b0e-699a-461a-bf3c-176a233ce409)
     (property "Reference" "J142" (at 265.43 77.47 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2408,7 +2409,7 @@
     (pin "2" (uuid cf965e0a-5634-421a-b120-ec82aa6ccf89))
     (pin "3" (uuid c383c997-36bc-4164-a9c7-56f82d9f5c49))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J142") (unit 1)
         )
@@ -2445,7 +2446,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "R101") (unit 1)
         )
@@ -2483,7 +2484,7 @@
     (pin "1" (uuid facb7cfb-0ae6-4716-8616-0d055f365020))
     (pin "2" (uuid ba4152ee-90b4-4870-8111-5bf3f36161cc))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "F103") (unit 1)
         )
@@ -2513,7 +2514,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "H111") (unit 1)
         )
@@ -2538,7 +2539,7 @@
     )
     (pin "1" (uuid 6206713a-d18b-48cf-84c4-2372153856e8))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0117") (unit 1)
         )
@@ -2568,7 +2569,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0131") (unit 1)
         )
@@ -2606,7 +2607,7 @@
     (pin "1" (uuid 7004d6bb-63ca-4316-9a8d-96847458494e))
     (pin "2" (uuid bcbe8a86-8c2f-42be-9988-2321feb76198))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "F101") (unit 1)
         )
@@ -2615,7 +2616,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 215.9 66.04 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 7d42a89d-d735-4407-a5f1-117509a39b35)
     (property "Reference" "J124" (at 218.44 63.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2638,7 +2639,7 @@
     (pin "1" (uuid 6ede7ba1-d96b-4ccd-b791-c40bc5d5eb9a))
     (pin "2" (uuid b1bb83a2-5971-4195-94b3-8e5ca557b358))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J124") (unit 1)
         )
@@ -2663,7 +2664,7 @@
     )
     (pin "1" (uuid 58a519ae-45be-4339-bf03-ebe74ecf4384))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0103") (unit 1)
         )
@@ -2693,7 +2694,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0141") (unit 1)
         )
@@ -2708,7 +2709,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 217.17 101.6 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 818a7ec5-9189-46ab-8f9a-20bc34137e69)
     (property "Reference" "J132" (at 219.71 99.06 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2731,7 +2732,7 @@
     (pin "1" (uuid 6df99485-d84c-44c0-a929-37ee85d716dc))
     (pin "2" (uuid 7a7361d4-1952-40a2-b1eb-6dec3418a4f9))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J132") (unit 1)
         )
@@ -2756,7 +2757,7 @@
     )
     (pin "1" (uuid 38a2a02b-1ca6-4f0e-9726-f5270a17deef))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0104") (unit 1)
         )
@@ -2792,7 +2793,7 @@
     (pin "5" (uuid 7aea693f-37dc-42d5-9c31-c28f9ed22e79))
     (pin "6" (uuid e0a9d991-187c-4152-a070-c0a902d55c9e))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J101") (unit 1)
         )
@@ -2822,7 +2823,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0109") (unit 1)
         )
@@ -2853,7 +2854,7 @@
     )
     (pin "1" (uuid c0a5018b-c77d-4970-a234-6e867b79cee7))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0118") (unit 1)
         )
@@ -2862,7 +2863,7 @@
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 185.42 153.67 180) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp yes)
     (uuid 8ee923cd-7c0c-40d7-ad65-1c50a8009b18)
     (property "Reference" "TP106" (at 185.42 158.75 0)
       (effects (font (size 1.27 1.27)))
@@ -2884,7 +2885,7 @@
     )
     (pin "1" (uuid aeab57bb-77c0-4c6d-a0b2-ba887177a5d3))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "TP106") (unit 1)
         )
@@ -2909,7 +2910,7 @@
     )
     (pin "1" (uuid 93add8b7-e37c-400a-842a-f8b28bfce4f7))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0204") (unit 1)
         )
@@ -2944,7 +2945,7 @@
     (pin "1" (uuid 2747ea02-a138-4ec0-9319-cbc5eec4f892))
     (pin "2" (uuid 7de7bac2-72fd-4100-a050-d2c938fd1c91))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J131") (unit 1)
         )
@@ -2953,7 +2954,7 @@
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 203.2 153.67 180) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp yes)
     (uuid a4871f77-1975-4487-b3ec-a51bfdf1c83c)
     (property "Reference" "TP104" (at 203.2 158.75 0)
       (effects (font (size 1.27 1.27)))
@@ -2975,7 +2976,7 @@
     )
     (pin "1" (uuid 25ec6291-11fc-47e2-b350-23eb77aa87b3))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "TP104") (unit 1)
         )
@@ -3000,7 +3001,7 @@
     )
     (pin "1" (uuid 83cc808e-b69a-45af-bea9-28d8f2f71803))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0128") (unit 1)
         )
@@ -3031,7 +3032,7 @@
     )
     (pin "1" (uuid 150997fb-fe45-43b5-9777-f92268a049b8))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "H102") (unit 1)
         )
@@ -3056,7 +3057,7 @@
     )
     (pin "1" (uuid 33edd086-d181-49c4-8028-3f4195b6e5f1))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0135") (unit 1)
         )
@@ -3065,7 +3066,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 215.9 54.61 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid b3d55339-0aed-44f8-b529-06946fe6ce1a)
     (property "Reference" "J123" (at 218.44 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3088,7 +3089,7 @@
     (pin "1" (uuid 091effc6-497b-417c-9de8-39bb1e51a6bd))
     (pin "2" (uuid ff41f56c-7498-4475-8fd0-d06602250dea))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J123") (unit 1)
         )
@@ -3125,7 +3126,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "R103") (unit 1)
         )
@@ -3161,7 +3162,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0138") (unit 1)
         )
@@ -3197,7 +3198,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0111") (unit 1)
         )
@@ -3234,7 +3235,7 @@
     )
     (pin "1" (uuid 78536059-52e5-4081-8d8c-7db6969e77cf))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "H104") (unit 1)
         )
@@ -3264,7 +3265,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "H112") (unit 1)
         )
@@ -3296,7 +3297,7 @@
     (pin "1" (uuid 2778be64-7353-4109-adba-a07d80fd582f))
     (pin "2" (uuid 620e7f89-df30-49f6-9e4a-68bdd1278f74))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J121") (unit 1)
         )
@@ -3327,7 +3328,7 @@
     )
     (pin "1" (uuid d506300b-c2bb-4af1-906a-e538758720e9))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "H103") (unit 1)
         )
@@ -3336,7 +3337,7 @@
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 194.31 153.67 180) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp yes)
     (uuid cbf21523-9ea8-466f-8d5e-b75395e054d8)
     (property "Reference" "TP105" (at 194.31 158.75 0)
       (effects (font (size 1.27 1.27)))
@@ -3358,7 +3359,7 @@
     )
     (pin "1" (uuid 65e364b7-08ed-45a7-95f6-65c0f92cf57b))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "TP105") (unit 1)
         )
@@ -3395,7 +3396,7 @@
           (reference "D?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "D104") (unit 1)
         )
@@ -3426,7 +3427,7 @@
     )
     (pin "1" (uuid b17ba59e-620a-4bdc-ab84-b99369724da9))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0130") (unit 1)
         )
@@ -3463,7 +3464,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "R104") (unit 1)
         )
@@ -3499,7 +3500,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0122") (unit 1)
         )
@@ -3530,7 +3531,7 @@
     )
     (pin "1" (uuid c76a4369-8371-4f55-b76a-8c06a9154ec6))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0116") (unit 1)
         )
@@ -3555,7 +3556,7 @@
     )
     (pin "1" (uuid 236cf44e-eb56-4d76-9d17-a86199478f13))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0140") (unit 1)
         )
@@ -3593,7 +3594,7 @@
     (pin "1" (uuid 82baf76e-3791-4919-8315-93802d67e5ba))
     (pin "2" (uuid b2065d47-4f86-4905-a28c-574a6ea6e83a))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "F102") (unit 1)
         )
@@ -3626,7 +3627,7 @@
     (pin "2" (uuid cc55b2e9-73e9-48dc-8e32-409ec6d0da15))
     (pin "3" (uuid 3e0b7f16-3270-41ad-99fc-0f8b28ec2654))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "J141") (unit 1)
         )
@@ -3651,7 +3652,7 @@
     )
     (pin "1" (uuid 403192d3-3dd1-4b4a-929b-a59043c4688e))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0107") (unit 1)
         )
@@ -3682,7 +3683,7 @@
     )
     (pin "1" (uuid 3bc98487-7e8a-48c6-8d23-c2d479a9bbda))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "TP107") (unit 1)
         )
@@ -3707,7 +3708,7 @@
     )
     (pin "1" (uuid 9a03ac01-5fb1-4d7c-8d31-76e083ed084f))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0120") (unit 1)
         )
@@ -3716,7 +3717,7 @@
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 220.98 153.67 180) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp yes)
     (uuid f9543f8c-cc97-44ae-91fc-091d065ad2c0)
     (property "Reference" "TP102" (at 220.98 158.75 0)
       (effects (font (size 1.27 1.27)))
@@ -3738,7 +3739,7 @@
     )
     (pin "1" (uuid 6f5f916e-fcaf-43c8-8821-0b14f1110a40))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "TP102") (unit 1)
         )
@@ -3763,7 +3764,7 @@
     )
     (pin "1" (uuid f1c3d0bb-5393-449b-a277-ca5a85044aec))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "#PWR0126") (unit 1)
         )
@@ -3782,7 +3783,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
       )
     )
@@ -3799,7 +3800,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "3"))
       )
     )
@@ -3816,7 +3817,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "4"))
       )
     )
@@ -3833,7 +3834,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "2"))
       )
     )

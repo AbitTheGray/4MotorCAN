@@ -146,7 +146,7 @@
     (pin "1" (uuid 953f5aff-6777-4173-a913-9b87f3e10a20))
     (pin "2" (uuid a6dce1cf-d735-4eb3-b0cb-955a6ac795cc))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "R221") (unit 1)
         )
@@ -174,7 +174,7 @@
     )
     (pin "1" (uuid 594fe65f-ceec-49ab-9bd1-f2d7bdd1bb8c))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR0517") (unit 1)
         )
@@ -193,7 +193,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b" (page "9"))
       )
@@ -211,7 +211,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b" (page "8"))
       )
@@ -229,7 +229,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b" (page "6"))
       )
@@ -247,7 +247,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1" (page "5"))
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b" (page "7"))
       )

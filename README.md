@@ -19,10 +19,15 @@ Buck converters and LDOs have their voltage limits close to the input pins (thos
 
 ## Features
 
-- [CAN bus](https://en.wikipedia.org/wiki/CAN_bus) with power (24V + 48V passthrough)
-- 4x [TMC5160](https://www.trinamic.com/products/integrated-circuits/details/tmc5160/) to control motors (slotted PCB) with build-in encoder
-- 4x Limit Switch
-- RGB header
+- [CAN bus](https://en.wikipedia.org/wiki/CAN_bus) with power
+  - 24V + 48V passthrough (48V optional, choose correct fuse orientation)
+  - 5V signal
+- 4x [TMC5160](https://www.trinamic.com/products/integrated-circuits/details/tmc5160/) to control motors (slotted PCB)
+  - Encoder connector
+  - Step LED (shows every step of the motor)
+  - Optional direction switched (input, see TMC5160 documentation)
+- 4x Limit Switch (endstop)
+- RGB header (5V but signal is 3.3V)
 - 4x 2pin Temperature sensor (resistor)
 - 4x 2pin Fan control (5V / 12V / 24V)
 - 2x Heating enable ("trigger", cannot power the heating)
@@ -42,3 +47,20 @@ Keep in mind those limits can be lower for higher-temperature environments (like
 | RP2040 (microcontroller) | 50 mA                | 85 °C           |
 | W25Q128JVS (flash)       | 4 mA                 | 85 °C (105 °C)  |
 | TMC5160 (motor driver)   |                      | 125 °C          |
+
+## Usage
+
+Following usages are all theoretical based on hardware capabilities, none have been tested.
+
+In case you do not want to use the 3mm pitch Molex connector for power, you can use the 3 pads in top-left corner to solder your wires directly to the PCB.
+This is not recommended as it will usually skip fuse for motors (unless you use 24V for motors using `F103`).
+
+### 3D Printer Board
+
+This board can be used as a main 3D printer board as it has everything required for a basic printer (4 motors, limit switches, temperature sensors, heating triggers).
+
+### CAN/USB Device
+
+This device can be controlled using either [CAN bus](https://en.wikipedia.org/wiki/CAN_bus) or USB.
+Having 4 motors and several input/output connectors, you can control most/all of the 3D printer from single CAN device.
+In case of multiple motors per axis, you may need multiple devices (this board was primarily designed to control 4 Z-axis motors using single controller over CAN).

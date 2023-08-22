@@ -1045,7 +1045,7 @@
     )
     (pin "1" (uuid 9573b389-2ca9-4e54-9019-9dbbbb775f89))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -1089,7 +1089,7 @@
     (pin "1" (uuid 17323b86-029e-4297-8d7a-93aabab487ef))
     (pin "2" (uuid 45a7f260-1f25-4ae6-9487-c87d5651bf5d))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "R?") (unit 1)
         )
@@ -1133,7 +1133,7 @@
     (pin "1" (uuid 070d49f8-518e-4df9-8fd8-35fdd6c8c08c))
     (pin "2" (uuid 04955797-2f0e-49af-8462-8663ca3751f1))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "R?") (unit 1)
         )
@@ -1177,7 +1177,7 @@
     (pin "1" (uuid e978c07a-4feb-4681-99cd-ede6547f6fbd))
     (pin "2" (uuid f3d4bc51-5c45-48f8-b1fd-9800b21211e8))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "R?") (unit 1)
         )
@@ -1218,7 +1218,7 @@
     (pin "1" (uuid c2d75022-c746-47c6-a048-8180a0e09356))
     (pin "2" (uuid bc4bc46e-2fab-4cdc-b35b-7cc4bc18cc61))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "C?") (unit 1)
         )
@@ -1262,7 +1262,7 @@
     (pin "1" (uuid 665d418d-9624-433c-8b20-1198bb183342))
     (pin "2" (uuid a48b7e29-501d-4160-95a1-9ada1afb2999))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "R?") (unit 1)
         )
@@ -1299,7 +1299,7 @@
     )
     (pin "1" (uuid fceed943-1700-4b82-bb73-02bd9d8e48c0))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0601") (unit 1)
         )
@@ -1340,7 +1340,7 @@
     (pin "1" (uuid a4e68ba7-5596-4e63-9dbd-6e0648fb8c19))
     (pin "2" (uuid cfa34611-aef7-4657-8c5f-4e575f6253d2))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "C?") (unit 1)
         )
@@ -1387,7 +1387,7 @@
     (pin "4" (uuid 55f683a0-286e-45cd-9da3-1ad39cdabf12))
     (pin "5" (uuid 48bae4d6-c276-4a3c-98fe-16ba60806dd6))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "J?") (unit 1)
         )
@@ -1424,7 +1424,7 @@
     )
     (pin "1" (uuid 67eb23f4-9740-41b7-a972-21030c8e8499))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -1470,7 +1470,7 @@
     (pin "3" (uuid 30e3d3da-cfa2-473a-b3cd-e18462592a28))
     (pin "4" (uuid 92f04114-cc7e-475b-b125-dd08f77984c4))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "J603") (unit 1)
         )
@@ -1498,7 +1498,7 @@
     )
     (pin "1" (uuid 76d2d13c-08f8-4d1b-8b24-602a0531a952))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -1535,7 +1535,7 @@
     )
     (pin "1" (uuid b9e4fb87-a8d0-4261-a995-3d7d170ad54d))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0619") (unit 1)
         )
@@ -1569,7 +1569,7 @@
     )
     (pin "1" (uuid 845ad7be-7374-4812-b85f-826d3dab8b55))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -1606,7 +1606,7 @@
     )
     (pin "1" (uuid e9586477-595e-4bfa-a843-4b71fecafbe4))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0618") (unit 1)
         )
@@ -1640,7 +1640,7 @@
     )
     (pin "1" (uuid 38f696a5-bedc-44d5-b983-88902b0f4a67))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -1681,7 +1681,7 @@
     (pin "1" (uuid 647f4bcd-4739-4839-b21f-bcc86b06b983))
     (pin "2" (uuid ee513441-0577-467f-b75c-2e606a976147))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "C?") (unit 1)
         )
@@ -1727,7 +1727,7 @@
     (pin "3" (uuid beb1294e-4033-4829-8f24-0a996714fb6c))
     (pin "4" (uuid 259105c9-06ef-47d3-8d95-1b8514411ba3))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "J?") (unit 1)
         )
@@ -1764,7 +1764,7 @@
     )
     (pin "1" (uuid d5556b90-85f5-47b3-825d-e7ab98da078e))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0623") (unit 1)
         )
@@ -1798,7 +1798,7 @@
     )
     (pin "1" (uuid e993428e-a511-421d-b105-30d09984bfdb))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -1827,16 +1827,19 @@
     (property "Value" "???" (at 81.28 44.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 84.1248 46.99 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (at 84.1248 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 85.09 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC" "" (at 85.09 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a73e5b5e-01fc-4a83-bf25-44634f09dc00))
     (pin "2" (uuid 408ebaed-431a-4c72-9d11-0732de1c4d55))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "C602") (unit 1)
         )
@@ -1882,7 +1885,7 @@
           (reference "D?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "D104") (unit 1)
         )
@@ -1931,7 +1934,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1"
           (reference "R104") (unit 1)
         )
@@ -1993,7 +1996,7 @@
     (pin "8" (uuid 1ab882f3-6f42-45e6-bbcc-a8543b224d33))
     (pin "9" (uuid 089843af-80cb-4b21-b5e5-362e64f3f16d))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "U601") (unit 1)
         )
@@ -2021,7 +2024,7 @@
     )
     (pin "1" (uuid 6be3078b-3f0b-485a-803b-74ecfe5a265c))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0204") (unit 1)
         )
@@ -2052,7 +2055,7 @@
     )
     (pin "1" (uuid 9aa65e0a-35d8-4ac9-8ca1-969fe3e5784e))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -2089,7 +2092,7 @@
     )
     (pin "1" (uuid 7fd26217-a906-40c2-92f3-8bff5bd93b6f))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -2126,7 +2129,7 @@
     )
     (pin "1" (uuid 4a8e1d3d-1e5b-4903-a668-bde1c203e188))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0634") (unit 1)
         )
@@ -2160,7 +2163,7 @@
     )
     (pin "1" (uuid 75b1216e-175f-4863-9390-8c41b92ac856))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "#PWR?") (unit 1)
         )
@@ -2197,7 +2200,7 @@
     )
     (pin "1" (uuid 7b981d72-a7e7-47a1-ad19-74ad6b8185ac))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b/a3514610-4e2d-47ba-84b8-39806e951746"
           (reference "#PWR0626") (unit 1)
         )
@@ -2238,7 +2241,7 @@
     (pin "1" (uuid 09dde744-bf8a-4358-a229-b287083f0dc3))
     (pin "2" (uuid 6fa0fa75-405a-4030-9a0b-df751ccf1bf2))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/03ab3e80-f454-40c8-8f97-43a0b791de0b"
           (reference "R?") (unit 1)
         )
