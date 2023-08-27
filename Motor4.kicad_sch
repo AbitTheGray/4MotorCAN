@@ -1066,7 +1066,7 @@
   )
 
   (symbol (lib_id "Device:R_Small") (at 95.25 173.99 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 18ec565c-fc06-4dfe-9bb8-2d1491887635)
     (property "Reference" "R?" (at 95.25 171.45 90)
       (effects (font (size 1.27 1.27)))
@@ -1110,7 +1110,7 @@
   )
 
   (symbol (lib_id "Device:C_Small") (at 130.81 176.53 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 346566a7-54fc-4b59-92d4-aff1c793494d)
     (property "Reference" "C?" (at 133.35 175.2663 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1293,7 +1293,7 @@
   )
 
   (symbol (lib_id "Device:R_Small") (at 43.18 163.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 617b321e-d9b9-4688-9f4b-cac321fde4b9)
     (property "Reference" "R?" (at 43.18 161.29 90)
       (effects (font (size 1.27 1.27)))
@@ -1390,7 +1390,7 @@
   )
 
   (symbol (lib_id "Device:C_Small") (at 91.44 176.53 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 8016bedc-3704-460b-b7f3-b336cc5da550)
     (property "Reference" "C?" (at 88.9 175.2663 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1512,7 +1512,7 @@
   )
 
   (symbol (lib_id "Device:LED") (at 39.37 173.99 0) (mirror x) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 96c9853b-eaa5-4e14-858b-343512b6a5f0)
     (property "Reference" "D?" (at 38.1 170.18 0)
       (effects (font (size 1.27 1.27)))
@@ -1654,7 +1654,7 @@
   )
 
   (symbol (lib_id "Device:R_Small") (at 127 173.99 270) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid af121c22-c1bb-43f5-a4bd-1fd1c5077b44)
     (property "Reference" "R?" (at 127 171.45 90)
       (effects (font (size 1.27 1.27)))
@@ -1769,7 +1769,7 @@
   )
 
   (symbol (lib_id "Device:R_Small") (at 100.33 171.45 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid b60ae76f-5b47-4bf0-ac45-f1b061fb9765)
     (property "Reference" "R?" (at 101.6 170.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1813,7 +1813,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_02x02_Odd_Even") (at 110.49 180.34 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid bd69e717-6721-45e5-8294-a180da33f0eb)
     (property "Reference" "J603" (at 111.76 175.26 0)
       (effects (font (size 1.27 1.27)))
@@ -1955,7 +1955,7 @@
   )
 
   (symbol (lib_id "Device:R_Small") (at 121.92 171.45 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid cfa0015f-3c59-4447-b3cd-ac3fd44887f8)
     (property "Reference" "R?" (at 120.65 170.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
