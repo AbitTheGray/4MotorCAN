@@ -837,6 +837,9 @@
     (uuid ff2d37bc-8322-4d38-abef-ee41c439d5e1)
   )
 
+  (no_connect (at 87.63 139.7) (uuid 2990d3e2-3cdb-4153-9d10-cd0bcba7f10e))
+  (no_connect (at 87.63 142.24) (uuid 564f93e6-8445-43bd-aa4a-4af8f26c9a26))
+
   (wire (pts (xy 55.88 73.66) (xy 55.88 91.44))
     (stroke (width 0) (type default))
     (uuid 02a02ded-e498-43f6-ac35-4194c526d766)
@@ -1090,15 +1093,15 @@
     (uuid ffef6a19-a653-41a6-a5f0-5a0bc4eb3ed1)
   )
 
-  (text "Limit switch (\"axis stop\"), Input, 5V" (at 170.18 130.81 0)
+  (text "Limit switch (\"axis stop\"), Input, 5V" (at 148.59 134.62 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2801b3d9-5ff7-418c-9ad9-322ad710b945)
   )
-  (text "CAN bus, 5V" (at 170.18 120.65 0)
+  (text "CAN bus, 5V" (at 148.59 102.87 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3388abc8-25da-43a5-8cf1-770e4a3acb36)
   )
-  (text "Digital output for RGB LEDs, may need to be 5V" (at 167.64 114.3 0)
+  (text "Digital output for RGB LEDs, may need to be 5V" (at 146.05 118.11 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4f8263fa-e8c6-4ae9-9b80-0cf18170c18a)
   )
@@ -1106,15 +1109,19 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 68e737be-80db-40c6-b7d7-688da482a5e1)
   )
-  (text "Global Motor Enable, Output, 3.3V" (at 177.8 88.9 0)
+  (text "Global Motor Enable, Output, 3.3V" (at 156.21 92.71 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 69661e8a-ba05-4590-9c74-9644c388f7d5)
+  )
+  (text "PWM Output" (at 146.05 105.41 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6c7b8ddd-0292-4e28-9f04-b295b0bb7c6e)
   )
   (text "12pF\n±20ppm" (at 64.77 125.73 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8fdf41a9-ec25-44d7-a903-0373efeddbe7)
   )
-  (text "PWM Output(s)" (at 168.91 80.01 0)
+  (text "PWM Output" (at 146.05 110.49 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ad33da4f-49db-41d0-984e-855256bec3f1)
   )
@@ -1122,7 +1129,11 @@
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid b97394bf-dbf4-4f25-a6dc-68ceed0db2d0)
   )
-  (text "Heating Enable, Output \"trigger\", 5V" (at 176.53 139.7 0)
+  (text "PWM Output" (at 146.05 107.95 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c02d8b4e-8831-463d-a084-ddb41e1a20a1)
+  )
+  (text "Heating Enable, Output \"trigger\", 5V" (at 154.94 121.92 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c194ddd2-b68d-40d0-b7ea-08f3f544552d)
   )
@@ -1130,9 +1141,13 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d113d755-0052-4ca2-81d6-97eaffc274be)
   )
-  (text "SPI" (at 175.26 101.6 0)
+  (text "CAN bus, 5V" (at 148.59 100.33 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid efcd0a94-2f1d-4a8e-8552-611d31e2de5a)
+    (uuid dc816a5e-80e8-4839-90b8-00fbac358479)
+  )
+  (text "PWM Output" (at 146.05 113.03 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid f33fbb29-c208-4748-8dde-05a357073836)
   )
 
   (label "QSPI_SD0" (at 78.74 96.52 0) (fields_autoplaced)
@@ -1172,94 +1187,87 @@
     (uuid e9a2427d-ca11-4559-96f4-9fddeb515c01)
   )
 
-  (global_label "RGB" (shape input) (at 160.02 113.03 0) (fields_autoplaced)
+  (global_label "RGB" (shape input) (at 138.43 116.84 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 06549889-5baa-4bb5-922b-8c3e31b01356)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.8152 113.03 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 145.2252 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Limit 1" (shape input) (at 160.02 125.73 0) (fields_autoplaced)
+  (global_label "Limit 1" (shape input) (at 138.43 129.54 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 06b1461c-5f64-4712-a524-376e80d6251e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.839 125.73 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.249 129.54 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SPI ~{CS} M4" (shape input) (at 160.02 107.95 0) (fields_autoplaced)
+  (global_label "SPI ~{CS} M4" (shape input) (at 138.43 73.66 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0aa460cb-201e-4bff-a73d-2585fde75a4e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 173.1651 107.95 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.5751 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Limit 3" (shape input) (at 160.02 130.81 0) (fields_autoplaced)
+  (global_label "Limit 3" (shape input) (at 138.43 132.08 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 12d6551a-7c06-4514-987c-32a998de99de)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.839 130.81 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.249 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Temp 3" (shape input) (at 140.97 147.32 0) (fields_autoplaced)
+  (global_label "Temp 3" (shape input) (at 138.43 147.32 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 1b11851f-6b34-4a1d-a935-09b3f35acdaa)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.0308 147.32 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.4908 147.32 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SPI CLK" (shape input) (at 160.02 92.71 0) (fields_autoplaced)
+  (global_label "SPI CLK" (shape input) (at 138.43 88.9 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 2d5e51db-3d94-46d7-938b-3eab17e1a951)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 170.6252 92.71 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.0352 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Bed Heating" (shape input) (at 160.02 138.43 0) (fields_autoplaced)
+  (global_label "Bed Heating" (shape input) (at 138.43 119.38 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 38be798b-0d8f-44b3-9855-1e7420d81fd6)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 174.677 138.43 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 153.087 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SWCLK" (shape input) (at 87.63 139.7 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 39691a9e-9903-4020-9679-f00179b356d4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 78.4158 139.7 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "SPI ~{CS} M2" (shape input) (at 160.02 102.87 0) (fields_autoplaced)
+  (global_label "SPI ~{CS} M2" (shape input) (at 138.43 78.74 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3edfcd28-7537-4ede-b089-68ecc6212617)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 173.1651 102.87 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.5751 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Limit 2" (shape input) (at 160.02 128.27 0) (fields_autoplaced)
+  (global_label "Limit 2" (shape input) (at 138.43 134.62 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 42fc8fc9-6226-4a28-8c8e-4bc8fe8890b4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.839 128.27 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.249 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "FAN4" (shape input) (at 160.02 82.55 0) (fields_autoplaced)
+  (global_label "FAN4" (shape input) (at 138.43 109.22 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 43468f4d-41de-457f-ade0-64417baf8d5e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.7224 82.55 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 146.1324 109.22 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Temp 4" (shape input) (at 140.97 149.86 0) (fields_autoplaced)
+  (global_label "Temp 4" (shape input) (at 138.43 149.86 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 469453af-cfb8-4e49-8405-8af36d98e702)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.0308 149.86 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.4908 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "FAN3" (shape input) (at 160.02 80.01 0) (fields_autoplaced)
+  (global_label "FAN3" (shape input) (at 138.43 104.14 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4eef044d-c6d3-4e2b-a18d-af35fd6671a5)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.7224 80.01 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 146.1324 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1270,10 +1278,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "Temp 2" (shape input) (at 140.97 144.78 0) (fields_autoplaced)
+  (global_label "Temp 2" (shape input) (at 138.43 144.78 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 61cca538-9780-49b4-a994-b422f65dbc7d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.0308 144.78 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.4908 144.78 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1284,94 +1292,87 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "Temp 1" (shape input) (at 140.97 142.24 0) (fields_autoplaced)
+  (global_label "Temp 1" (shape input) (at 138.43 142.24 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 6e9966f9-cac7-4e7d-bbd1-37e631b5388d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.0308 142.24 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.4908 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SPI ~{CS} M3" (shape input) (at 160.02 105.41 0) (fields_autoplaced)
+  (global_label "SPI ~{CS} M3" (shape input) (at 138.43 76.2 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 6fc09c91-7edd-4978-b4ae-92fa225dccdf)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 173.1651 105.41 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.5751 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "FAN2" (shape input) (at 160.02 77.47 0) (fields_autoplaced)
+  (global_label "FAN2" (shape input) (at 138.43 106.68 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 89805a51-137f-4424-919d-55e14530759e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.7224 77.47 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 146.1324 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SPI ~{CS} M1" (shape input) (at 160.02 100.33 0) (fields_autoplaced)
+  (global_label "SPI ~{CS} M1" (shape input) (at 138.43 81.28 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 8dd4d036-2f49-4ba8-903b-43697c0ab6cd)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 173.1651 100.33 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.5751 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "FAN1" (shape input) (at 160.02 74.93 0) (fields_autoplaced)
+  (global_label "FAN1" (shape input) (at 138.43 111.76 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 941b6530-d630-43a1-bef6-11ce0582b14c)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.7224 74.93 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 146.1324 111.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Limit 4" (shape input) (at 160.02 133.35 0) (fields_autoplaced)
+  (global_label "Limit 4" (shape input) (at 138.43 137.16 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 94a8e13f-444d-4f8c-b780-6340b943003b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.839 133.35 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.249 137.16 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SPI MOSI" (shape input) (at 160.02 95.25 0) (fields_autoplaced)
+  (global_label "SPI MOSI" (shape input) (at 138.43 86.36 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 9a7c32b0-aceb-4252-9d25-7f2adbe5af20)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 171.6533 95.25 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 150.0633 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "CAN-H" (shape input) (at 160.02 118.11 0) (fields_autoplaced)
+  (global_label "CAN-H" (shape input) (at 138.43 101.6 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b0171328-8a84-4081-be60-a04b5742462b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.5972 118.11 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.0072 101.6 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{MOTOR ENABLE}" (shape input) (at 160.02 87.63 0) (fields_autoplaced)
+  (global_label "~{MOTOR ENABLE}" (shape input) (at 138.43 91.44 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b3f76314-ddaf-4801-b64c-d51f29349f2e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.338 87.63 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 155.748 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SWD" (shape input) (at 87.63 142.24 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b40746f2-db09-45e1-b588-52c3d2f2ed3a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 80.7139 142.24 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Head Heating" (shape input) (at 160.02 140.97 0) (fields_autoplaced)
+  (global_label "Head Heating" (shape input) (at 138.43 121.92 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid dbf42044-fcfc-4fe2-b73a-1cb79e4b5ccf)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 175.8865 140.97 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 154.2965 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "CAN-L" (shape input) (at 160.02 120.65 0) (fields_autoplaced)
+  (global_label "CAN-L" (shape input) (at 138.43 99.06 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f35a1ff1-385b-4c88-96bb-089608a716f7)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.2948 120.65 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 147.7048 99.06 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SPI MISO" (shape input) (at 160.02 97.79 0) (fields_autoplaced)
+  (global_label "SPI MISO" (shape input) (at 138.43 83.82 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid fcd1ad82-1db7-4519-bd52-6d9196797f71)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 171.6533 97.79 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 150.0633 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1400,7 +1401,7 @@
     (pin "1" (uuid 4eafee5b-fd40-45bf-878e-6d8ceb890266))
     (pin "2" (uuid 794fb789-1602-43e8-865e-f32649c63d80))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C201") (unit 1)
         )
@@ -1425,7 +1426,7 @@
     )
     (pin "1" (uuid 30ebba3f-c0c5-44a4-b353-39123e29cb59))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0204") (unit 1)
         )
@@ -1454,7 +1455,7 @@
     (pin "1" (uuid 41b18baf-fd64-4094-b910-a1d982d80f5c))
     (pin "2" (uuid 5037c84b-1575-4a10-a492-e9828091c7ea))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "R211") (unit 1)
         )
@@ -1483,7 +1484,7 @@
     (pin "1" (uuid 83737990-969d-42ad-bff8-5296eace4e49))
     (pin "2" (uuid be671d1c-db41-4159-afba-617e906d6ec3))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C234") (unit 1)
         )
@@ -1515,7 +1516,7 @@
     (pin "1" (uuid 90fddb0a-63a9-428e-a226-6ffa505d2522))
     (pin "2" (uuid 5049d042-daea-438a-bfbc-0eabf84e5a28))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C202") (unit 1)
         )
@@ -1544,7 +1545,7 @@
     (pin "1" (uuid 773f24f4-8a91-4bfa-9168-26ac4d6261a2))
     (pin "2" (uuid b850d672-1ff3-4ccc-bc7d-a983f8f36193))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C239") (unit 1)
         )
@@ -1569,7 +1570,7 @@
     )
     (pin "1" (uuid 06e6a510-9965-4561-8c60-b6e9d4ee29ae))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0208") (unit 1)
         )
@@ -1578,7 +1579,7 @@
   )
 
   (symbol (lib_id "Device:R_Small") (at 49.53 85.09 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 339643f7-c7a6-4e47-b7fd-9f970549f362)
     (property "Reference" "R221" (at 48.26 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1601,7 +1602,7 @@
     (pin "1" (uuid f9959199-c59b-458a-b7b2-1d76329e17db))
     (pin "2" (uuid ba4aa2c6-aeff-4f82-a683-fcbe3ad2bcbd))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "R221") (unit 1)
         )
@@ -1624,7 +1625,7 @@
     (property "Datasheet" "" (at 85.09 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 85.09 129.54 0)
+    (property "LCSC" "C851849" (at 85.09 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Mouser" "" (at 85.09 129.54 90)
@@ -1633,7 +1634,7 @@
     (pin "1" (uuid ace6c291-907e-4d68-99b6-99e54206e7eb))
     (pin "2" (uuid 89b14c04-5398-4666-b4b2-117f9bbead6d))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "R201") (unit 1)
         )
@@ -1662,7 +1663,7 @@
     (pin "1" (uuid c3443bb1-6ec8-40d8-becc-490fe5a12284))
     (pin "2" (uuid eca9f40c-85a3-4ff6-8682-fc045049a2d7))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "R212") (unit 1)
         )
@@ -1687,7 +1688,7 @@
     )
     (pin "1" (uuid 08c3de45-5eff-4fe9-a262-51325ea4c79e))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0207") (unit 1)
         )
@@ -1712,7 +1713,7 @@
     )
     (pin "1" (uuid 9038a4fd-2e13-42c4-8f00-531a90d5cff4))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0212") (unit 1)
         )
@@ -1729,16 +1730,19 @@
     (property "Value" "Reset" (at 76.2 74.93 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 76.2 68.58 0)
+    (property "Footprint" "Custom:Button 6x3.6mm" (at 76.2 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 76.2 68.58 0)
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2002271735_XKB-Connectivity-TS-1101-C-W_C318938.pdf" (at 76.2 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C318938" (at 76.2 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 10cf9fd7-0135-48ce-84f1-7218edfc216a))
     (pin "2" (uuid 7893d80e-53e8-4905-b726-2dbbbce9f3ae))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "SW201") (unit 1)
         )
@@ -1767,7 +1771,7 @@
     (pin "1" (uuid 0e66c2c5-afe6-4295-a159-8780a83fdd38))
     (pin "2" (uuid 2c785394-3545-4de8-b6de-d2132421d284))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C221") (unit 1)
         )
@@ -1796,7 +1800,7 @@
     (pin "1" (uuid b4b6d4a0-0839-42be-8905-1c8f50f7434d))
     (pin "2" (uuid 4b1b0876-f506-4692-a5be-f617b17d33d3))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C211") (unit 1)
         )
@@ -1825,7 +1829,7 @@
     (pin "1" (uuid ae8e9488-b4ea-4205-b53e-1d29c04c822a))
     (pin "2" (uuid 93a540fd-caf4-479f-a430-ebe5003d65aa))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C235") (unit 1)
         )
@@ -1850,7 +1854,7 @@
     )
     (pin "1" (uuid 2df3af30-0acf-4fd2-a3e7-eafdbd668c5b))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0214") (unit 1)
         )
@@ -1879,7 +1883,7 @@
     (pin "1" (uuid a6b57dd2-eed0-4866-80ba-cb5b4581f0bb))
     (pin "2" (uuid a85409b4-ab02-49f0-bd1e-347c66d33bcc))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C233") (unit 1)
         )
@@ -1904,7 +1908,7 @@
     )
     (pin "1" (uuid db1f2de8-f4eb-413f-9b94-8d509c8b6758))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0211") (unit 1)
         )
@@ -1929,7 +1933,7 @@
     )
     (pin "1" (uuid 4362401a-3bba-4329-9d1f-fec209f0e648))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0209") (unit 1)
         )
@@ -1954,7 +1958,7 @@
     )
     (pin "1" (uuid 4204e508-d359-4ad4-bea1-0dd7cf608405))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0202") (unit 1)
         )
@@ -1992,7 +1996,7 @@
     (pin "7" (uuid 1e5a93fb-ccbb-4de8-b0a9-2335a3a392ea))
     (pin "8" (uuid 1121cea5-aab2-4665-99ca-897cb872927d))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "U202") (unit 1)
         )
@@ -2017,7 +2021,7 @@
     )
     (pin "1" (uuid 6624aac9-2ee7-4c1d-a0a8-a9f8a87c746a))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0205") (unit 1)
         )
@@ -2046,7 +2050,7 @@
     (pin "1" (uuid f6f4b2ac-46e0-45c3-8687-6469dfb5c1aa))
     (pin "2" (uuid 70686ee6-f65b-4322-9a4d-8f90f91fd148))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C222") (unit 1)
         )
@@ -2063,16 +2067,19 @@
     (property "Value" "Boot" (at 60.96 74.93 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 60.96 68.58 0)
+    (property "Footprint" "Custom:Button 6x3.6mm" (at 60.96 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 60.96 68.58 0)
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2002271735_XKB-Connectivity-TS-1101-C-W_C318938.pdf" (at 60.96 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C318938" (at 60.96 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e69754ef-d12a-4892-a71d-837580f500b2))
     (pin "2" (uuid 7b2c55d8-382e-4367-ad7c-05efc3ef7647))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "SW202") (unit 1)
         )
@@ -2097,7 +2104,7 @@
     )
     (pin "1" (uuid 91dfced1-3a9f-49b0-8285-f52e5874b730))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0215") (unit 1)
         )
@@ -2128,7 +2135,7 @@
     (pin "3" (uuid 27b6740b-7fe8-4b42-97ba-1b1d11f67b8a))
     (pin "4" (uuid 9f1ec8c0-9c7e-42ee-9715-8d10434b8fad))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "Y201") (unit 1)
         )
@@ -2153,7 +2160,7 @@
     )
     (pin "1" (uuid 70124b0a-74e9-43b4-b97f-1e7f3f66b3a1))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0203") (unit 1)
         )
@@ -2182,7 +2189,7 @@
     (pin "1" (uuid 6dd39913-9913-46d2-8476-4f2f8adce1af))
     (pin "2" (uuid 9ddaabe1-dda8-4536-8fca-92bacfe946d9))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C231") (unit 1)
         )
@@ -2211,7 +2218,7 @@
     (pin "1" (uuid 83fc6844-f50f-40ba-9a28-b050e910bd2d))
     (pin "2" (uuid f976d67f-2fd4-464c-9c78-7aaf57281a9d))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C237") (unit 1)
         )
@@ -2240,7 +2247,7 @@
     (pin "1" (uuid a5a5dc27-9164-45c8-8d26-b272cb16418a))
     (pin "2" (uuid 96be4a57-9519-4991-b0c0-be495c845f32))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C232") (unit 1)
         )
@@ -2265,7 +2272,7 @@
     )
     (pin "1" (uuid 74583749-4300-4306-8b80-c984e85912c3))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0210") (unit 1)
         )
@@ -2290,7 +2297,7 @@
     )
     (pin "1" (uuid 2cbb56c8-866b-4b3f-a36e-f00b2697ce01))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0213") (unit 1)
         )
@@ -2315,7 +2322,7 @@
     )
     (pin "1" (uuid eb468168-e4db-4080-b69c-70f86f9f778c))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0206") (unit 1)
         )
@@ -2340,7 +2347,7 @@
     )
     (pin "1" (uuid 67fef284-772d-4c61-b86a-5ef06bb7d949))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "#PWR0201") (unit 1)
         )
@@ -2427,7 +2434,7 @@
     (pin "8" (uuid 0fffdfa2-eca9-498b-91ef-d35028d70804))
     (pin "9" (uuid 33c34af0-f6f6-4c60-884c-4f658eda87bb))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "U201") (unit 1)
         )
@@ -2456,7 +2463,7 @@
     (pin "1" (uuid 9b91e10d-fd47-4dbe-b816-3a752123ecbd))
     (pin "2" (uuid 54c4c1e7-d34c-4e09-b1aa-62316ee931fb))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C238") (unit 1)
         )
@@ -2485,7 +2492,7 @@
     (pin "1" (uuid bef1ba4d-743b-40b3-885c-dc01e5e83909))
     (pin "2" (uuid aeaaa72c-83bc-4f85-84dd-d29d6e476aeb))
     (instances
-      (project "Can3DPrinter4Motor"
+      (project "4MotorCAN"
         (path "/cb4e159a-5c17-494a-ba7f-10e700f814f1/e05e1111-b676-4692-8151-4de155805267"
           (reference "C236") (unit 1)
         )
